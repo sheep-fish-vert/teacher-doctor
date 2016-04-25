@@ -25,24 +25,55 @@ function getMaterialDesignColors(){
 
 // header telefone hover
 
-function headerTelefoneHover(hoverColor){
+    function headerTelefoneHover(hoverColor){
 
-    $('.header-telefone').hover(
-        function(){
-            $(this).find('.telefone-number-wrap').css('color', hoverColor);
-        },
-        function(){
-            $(this).find('.telefone-number-wrap').removeAttr('style');
-        }
-    );
+        $('.header-telefone').hover(
+            function(){
+                $(this).find('.telefone-number-wrap').css('color', hoverColor);
+            },
+            function(){
+                $(this).find('.telefone-number-wrap').removeAttr('style');
+            }
+        );
 
-}
+    }
 
 // /header telefone hover
 
+// diagram scripts
+
+    function diagramScripts(){
+
+        function circlesBlockHeight(){
+
+            var mboxHalfWidth = parseInt($('.nine-block .mbox').width())/2;
+
+            $('.like-svg-graf').height(mboxHalfWidth);
+
+        }
+
+
+        circlesBlockHeight();
+
+        $(window).load(function(){
+
+            circlesBlockHeight();
+
+        });
+
+        $(window).resize(function(){
+
+            circlesBlockHeight();
+
+        });
+
+    }
+
+// /diagram scripts
+
 $(document).ready(function(){
 
-
+    diagramScripts();
 
 });
 
