@@ -37,7 +37,7 @@
 /*/top block*/
 
 /*five block*/
-.five-block{padding-top: 60px;
+.four-block{padding-top: 60px;
     .top-block-title{text-align: center;font-size: 46px;line-height: 1.3;font-weight: 400;font-family:'Roboto',sans-serif;position: relative;margin-bottom: 80px;
         span{position: absolute;bottom:-39px;width: 75px;left: 50%;transform: translateX(-50%);height: 3px;}
     }
@@ -62,3 +62,18 @@
   to {transform: rotate3d(0, 0, 1, 0deg);}
 }
 /*/five block*/
+
+/*seven-block*/
+.seven-block{display: flex;flex-wrap:wrap;justify-content:flex-start;align-items:center;
+    .item{background-color: #535b65;height: 270px;width: 33.33%;
+        &.dark{background-color: #25282d;}
+        &.grey{background-color: #40474f;}
+        &.item-7,&.item-8{width: 50%;}
+        &.center{background-color: #292d32;}
+
+        .item-count{
+            span{font-weight: 500;font-size: 250px;color: #000;opacity: 0.1;line-height: 1;}
+        }
+    }
+}
+/*/seven-block*/
