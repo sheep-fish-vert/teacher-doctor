@@ -1,6 +1,6 @@
 /* header */
 
-    .header{position: fixed;width: 100%;background-color: #fff;
+    .header{position: fixed;width: 100%;background-color: #fff;z-index: 3;
         .header-wrap{display: flex;justify-content:space-between;align-items:center;min-height: 70px;
 
             // header left
