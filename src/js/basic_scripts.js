@@ -13,9 +13,10 @@ $.scrollbarWidth=function(){var a,b,c;if(c===undefined){a=$('<div style="width:5
 function scrollUp(block,targetBlock) {
 
     $(block).click(function(e){
+        var header = $('.header').height();
         var target = $(targetBlock).offset().top;
 
-        $(scroller).stop().animate({scrollTop:target},800);
+        $(scroller).stop().animate({scrollTop:target-header},800);
         return false;
 
         e.preventDefault();
@@ -148,11 +149,15 @@ function headeButer(menuMobile,toggleMenu){
 
 /* DOCUMENT READY  */
 $(document).ready(function() {
+    scrollUp('.top-block-button','#second')
     //oneHeightItems();
     //$('.footer_placeholder').height($('.footer').outerHeight());
 
     //goTo();
     //animationBlock($('.setion-animate'));
+
+    headeButer($('.sendwich'), $('.navigation-main'));
+
 });
 
 $(window).resize(function() {
