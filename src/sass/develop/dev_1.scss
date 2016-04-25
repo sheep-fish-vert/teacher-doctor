@@ -1,11 +1,11 @@
 /* header */
 
-    .header{position: fixed;width: 100%;background-color: #fff;z-index: 3;
-        .header-wrap{display: flex;justify-content:space-between;align-items:center;min-height: 70px;
+    .header{position: fixed;width: 100%;background-color: #fff;z-index: 3;backface-visibility:hidden;
+        .header-wrap{display: flex;justify-content:space-between;align-items:center;min-height: 70px;padding:5px 0;position: relative;
 
             // header left
 
-            .header-left{display: flex;align-items:center;align-items:center;justify-content:flex-start;
+            .header-left{display: flex;align-items:center;align-items:center;justify-content:flex-start;position:relative;z-index:1;
                 .header-logo{
                     a{display: flex;justify-content: flex-start;align-items: center;text-decoration: none;}
                     .header-logo-img{margin-right: 15px;}
@@ -27,13 +27,13 @@
 
             // navigation
 
-            .header-navigation{max-width: 400px;width: 100%;padding:0 5px;
+            .header-navigation{max-width: 400px;width: 100%;padding:0 5px;z-index: 0;
                 .navigation-main{
                     ul{display: flex;justify-content: center;align-items: center;flex-wrap:wrap;width: 100%;}
                     li{padding:0 5px;
                         a{display: inline-block;position: relative;padding:5px 0;text-decoration: none;color:#000;font-size: 12px;line-height:16px;
                             span{position: absolute;bottom: 0;left: 0;height: 1px;width: 0;transition: width 300ms ease;}
-                            &:hover{
+                            &:hover, &.active{
                                 span{width: 100%;}
                             }
                         }
@@ -45,10 +45,10 @@
 
             // header-right
 
-            .header-right{display: flex;align-items: center;justify-content: flex-start;
+            .header-right{display: flex;align-items: center;justify-content: flex-start;position:relative;z-index:1;
                 .header-telefone{display: flex;align-items: center;justify-content: flex-start;margin-right: 25px;cursor: pointer;
                     .telefone-number-wrap{font-size: 30px;color: #000;line-height: 36px;transition: color 300ms ease;}
-                    .telefone-number{margin-left: 10px;position:relative;
+                    .telefone-number{margin-left: 10px;position:relative; z-index: 100;
                         .material-design-border-color{position:absolute;height: 1px;width: 100%;
                             &:before{content:'';display: block;position: absolute;top:0;left:0;height:1px;width: 100%;border-top:1px dashed #fff;transition: opacity 300ms ease;}
                         }
@@ -76,7 +76,24 @@
 
             // sendwich styles
 
-            .sendwich{display: none;}
+            .sendwich{display: none;width: 30px;height: 30px;cursor: pointer;position: absolute;right: 0;top:calc(50% - 15px);
+                .sendwich-wrap{position: relative;width: 30px;height: 30px;
+                    span{height: 4px;width: 30px;position: absolute;left:0;transition:all 300ms ease;
+                        &.top-line{top:0;transform-origin:0 50%;}
+                        &.center-line{top:calc(50% - 2px);}
+                        &.bottom-line{bottom:0;transform-origin:0 50%;}
+                    }
+                }
+                &.active{
+                    .sendwich-wrap{
+                        span{
+                            &.top-line{left:4px;top:2px;transform:rotate(45deg);}
+                            &.center-line{opacity: 0;}
+                            &.bottom-line{left:4px;bottom:2px;transform:rotate(-45deg);}
+                        }
+                    }
+                }
+            }
 
             // /sendwich styles
 

@@ -17,7 +17,26 @@
 
 }
 @media screen and (max-width: 767px){
-
+    .super-button{width: 50px; height: 50px; right: 20px; bottom: 20px;   
+        .call-phone { width: 50px;  height: 50px;
+            i {font-size: 35px;}
+        }
+        .after-frorm {width: 290px; right: -10px;}
+        .active-form span.before { right: 21px;}
+    }
+    .six-block {
+        .title-text { font-size: 28px;}
+        .subtext { text-align: center; font-size: 18px;  padding-top: 16px; }
+        .top-block-form {
+            input { font-size: 16px; height: 46px;
+                &::-webkit-input-placeholder {color:#545454;font-size: 16px;font-weight: 300;}
+                &:-moz-placeholder {color:#545454;font-size: 16px;font-weight: 300;}
+                &::-moz-placeholder {color:#545454;font-size: 16px;font-weight: 300;}
+                &:-ms-input-placeholder {color:#545454;font-size: 16px;font-weight: 300;}
+            }
+            button[type=submit]{font-size: 16px; height: 46px;}
+        }
+    }
 }
 @media screen and (max-width: 666px){
 
