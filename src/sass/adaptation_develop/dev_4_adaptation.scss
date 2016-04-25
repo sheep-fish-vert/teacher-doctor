@@ -11,7 +11,20 @@
 
 }
 @media screen and (max-width: 1024px){
-
+    /*top block*/
+    .top-block{
+        .top-block-slider .item{min-height: 768px;}
+        .top-block-inform{padding-top: 95px;
+            .top-block-title{font-size: 49px;line-height: 1;}
+            .top-block-subtitle{font-size: 20px;padding-top: 42px;line-height: 1.2;padding-bottom: 36px;
+            }
+            .top-block-form{padding: 22px 42px;margin-bottom: 15px;
+                .top-block-form-title{padding-bottom: 20px;font-size: 42px;}
+                button[type=submit]{margin-bottom: 5px;}
+            }
+        }
+    }
+    /*/top block*/
 }
 @media screen and (max-width: 992px){
 
