@@ -203,6 +203,11 @@ function Maskedinput(){
         $('.tel-mask').mask('+9 (999) 999-99-99 ');
     }
 }
+function Maskedinput2(){
+    if($('.tel-mask2')){
+        $('.tel-mask2').mask('+7 (999) -999-99-99 ');
+    }
+}
 
 /*fansybox на форме*/
 function fancyboxForm(){
@@ -272,7 +277,9 @@ function someAjax(item, someUrl, successFunc, someData){
 
 $(document).ready(function(){
 
-   validate(' .contact-form-sender ', {submitFunction:validationCall});
+    validate(' .contact-form-sender ', { submitFunction: validationCall });
+    Maskedinput2();
+   validate('#call-popup .contact-form', {submitFunction:validationCall});
    Maskedinput();
    fancyboxForm();
 
