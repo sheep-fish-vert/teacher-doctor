@@ -1,5 +1,5 @@
 /*top block*/
-.top-block{position: relative;z-index: 1;
+.top-block{position: relative;z-index: 1;overflow: hidden;
     .top-block-slider{margin-bottom: 0;
         .item{min-height: 1080px;position: relative;overflow: hidden;
             img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);min-width: 100%;    max-width: none;}
@@ -13,24 +13,41 @@
         .top-block-subtitle{font-size: 22px;font-weight: 300;padding-top: 57px;line-height: 1.5;padding-bottom: 71px;
             b{font-weight: bold;}
         }
-        .top-block-form{width: 100%;max-width: 600px;margin:0 auto;padding: 30px 48px;background-color: #fff;border:1px solid #c9cccf;box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.3);margin-bottom: 51px;
-            p{font-weight: 300;color: #545454;font-size: 21px;margin-bottom: 27px;}
-            .top-block-form-title{font-size: 46px;text-transform: uppercase;padding-bottom: 29px;}
-            .top-block-form-input{margin-bottom: 27px;}
-            input{height: 60px;width: 100%;font-size: 30px;font-weight: 300;color: #545454;font-family:'Roboto',sans-serif;border-width: 1px;border-color: rgb(162, 162, 162);border-style: solid;border-radius: 2px;padding: 0 23%;
-                &::-webkit-input-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
-                &:-moz-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
-                &::-moz-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
-                &:-ms-input-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
-            }
-            button[type=submit]{height: 60px;color: #fff;text-transform: uppercase;width: 100%;max-width: 370px;margin:0 auto;position: relative;border:none;cursor: pointer;font-size: 22px;font-weight: 500;margin-bottom: 29px;
-                span{position: absolute;width: 100%;left: 0;top: 50%;transform: translateY(-50%);}
-            }
-        }
     }
     .top-block-button{display: inline-block;max-width: 19px;opacity: 0.5;transition:all ease .2s;
         &:hover{opacity: .8;}
         a{display: inline-block;}
     }
 }
+
+.top-block-form{width: 100%;max-width: 600px;margin:0 auto;padding: 30px 48px;background-color: #fff;border:1px solid #c9cccf;box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.3);margin-bottom: 39px;
+    p{font-weight: 300;color: #545454;font-size: 21px;margin-bottom: 27px;}
+    .top-block-form-title{font-size: 46px;text-transform: uppercase;padding-bottom: 29px;}
+    .top-block-form-input{margin-bottom: 27px;}
+    input{height: 60px;width: 100%;font-size: 30px;font-weight: 300;color: #545454;font-family:'Roboto',sans-serif;border-width: 1px;border-color: rgb(162, 162, 162);border-style: solid;border-radius: 2px;padding: 0 23%;
+        &::-webkit-input-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
+        &:-moz-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
+        &::-moz-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
+        &:-ms-input-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
+    }
+    button[type=submit]{height: 60px;color: #fff;text-transform: uppercase;width: 100%;max-width: 370px;margin:0 auto;position: relative;border:none;cursor: pointer;font-size: 22px;font-weight: 500;margin-bottom: 29px;
+        span{position: absolute;width: 100%;left: 0;top: 50%;transform: translateY(-50%);}
+    }
+}
 /*/top block*/
+
+/*five block*/
+.five-block{padding-top: 60px;
+    .top-block-title{text-align: center;font-size: 46px;line-height: 1.3;font-weight: 400;font-family:'Roboto',sans-serif;position: relative;margin-bottom: 80px;
+        span{position: absolute;bottom:-39px;width: 75px;left: 50%;transform: translateX(-50%);height: 3px;}
+    }
+    .five-block-items{margin:0 auto;width: 100%;max-width: 970px;display: flex;flex-wrap:wrap;justify-content: space-between;align-items: center;
+        .item-block{width: 50%;display: flex;flex-wrap:nowrap;align-items: center;margin-bottom: 35px;}
+        .item-block-wrap-img{height: 70px;width: 70px;overflow: hidden;border:1px solid #bcc5c6;border-radius: 50%;position: relative;
+            img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+        }
+        .item-block-img{margin-right: 30px;}
+        .item-block-text{padding-right: 28px;font-weight: 300;font-size: 16px;color: #000;line-height: 1.3;}
+    }
+}
+/*/five block*/

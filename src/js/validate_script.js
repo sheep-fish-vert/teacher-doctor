@@ -95,22 +95,29 @@ function validate(form, options){
 }
 
 /*Отправка формы с вызовом попапа*/
-function validationCall(form){
-
+function validationCall(form) {
+    
+    $(form).find('button').prop("disabled", true);
+    $(form).find('button').addClass('doesnotuse');
+    $(form).find('input').prop("disabled", true);
+    $('.header').removeClass('hide-hipe');
+    $('.main').removeClass('hide-hipe');
+    $('.after-frorm').removeClass('active-form');
+    
   var thisForm = $(form);
   var formSur = thisForm.serialize();
-
+    
     $.ajax({
         url : thisForm.attr('action'),
         data: formSur,
         method:'POST',
         success : function(data){
             if ( data.trim() == 'true') {
-                thisForm.trigger("reset");
+               // thisForm.trigger("reset");
                 popNext("#call_success", "call-popup");
             }
             else {
-               thisForm.trigger('reset');
+               //thisForm.trigger('reset');
             }
 
         }
@@ -269,6 +276,8 @@ function someAjax(item, someUrl, successFunc, someData){
 */
 
 $(document).ready(function(){
+
+    validate(' .contact-form-sender ', { submitFunction: validationCall });
     Maskedinput2();
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    Maskedinput();

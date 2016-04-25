@@ -15,3 +15,23 @@
         }
     }
 /*END second*/
+/*third*/
+    @media screen and (max-width: 768px){
+        .third-block{
+            .third-wrap{
+                .title{font-size: 32px;line-height: 42px;}
+            }
+        }
+    }
+    @media screen and (max-width: 468px){
+        .third-block{
+            .third-wrap{
+                .title{font-size: 28px;line-height: 38px;}
+                .content-wrap{
+                    .num{top:10px; left: 5px;}
+                    .item{padding: 10px 10px 10px 65px;}
+                }
+            }
+        }
+    }
+/*END third*/
