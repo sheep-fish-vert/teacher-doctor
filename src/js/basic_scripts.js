@@ -153,6 +153,9 @@ $(document).ready(function() {
 
     //goTo();
     //animationBlock($('.setion-animate'));
+
+    headeButer($('.sendwich'), $('.navigation-main'));
+
 });
 
 $(window).resize(function() {
