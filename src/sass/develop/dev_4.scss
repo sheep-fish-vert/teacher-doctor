@@ -1,0 +1,14 @@
+/*top block*/
+.top-block{position: relative;z-index: 1;
+    .top-block-slider{margin-bottom: 0;
+        .item{min-height: 100vh;position: relative;overflow: hidden;
+            img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+        }
+    }
+    .top-block-inform{position: absolute;top: 0;left: 0;width: 100%;text-align: center;padding-top: 140px;
+        .top-block-title{font-size: 60px;line-height: 1.2;font-weight: 100;font-family:'Roboto',sans-serif;
+            b{font-weight: bold;text-transform: uppercase;}
+        }
+    }
+}
+/*/top block*/
