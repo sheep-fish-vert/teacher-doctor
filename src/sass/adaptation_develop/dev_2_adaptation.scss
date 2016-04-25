@@ -17,7 +17,13 @@
 
 }
 @media screen and (max-width: 767px){
-
+    .super-button{width: 50px; height: 50px; right: 20px; bottom: 20px;   
+        .call-phone { width: 50px;  height: 50px;
+            i {font-size: 35px;}
+        }
+        .after-frorm {width: 290px; right: -10px;}
+        .active-form span.before { right: 21px;}
+    }
 }
 @media screen and (max-width: 666px){
 

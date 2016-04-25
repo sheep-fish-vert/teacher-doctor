@@ -42,13 +42,23 @@
 
 </div>
 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="filters">
+    <defs>
+        <filter id="blurr">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"></feGaussianBlur>
+        </filter>
+    </defs>
+</svg>
+
 <div class="super-button">
-    <div class="call-phone" >
+    <div class="call-phone mdl-color--accent" >
+        <span class="before spec-border"></span>
+        <span class="after spec-border"></span>
         <i class="material-icons">local_phone</i>
     </div>
     <div class="after-frorm ">
         <span class="before"></span>
-        <form action="ajax.php" name="" class="contact-form">                
+        <form action="ajax.php" name="call-for-us" class="contact-form-sender">                <!--  --> 
             <div class="contact-form-title">
                 <h5>Заказать звонок</h5>
             </div>
