@@ -14,9 +14,15 @@
             b{font-weight: bold;}
         }
         .top-block-form{width: 100%;max-width: 600px;margin:0 auto;padding: 30px 48px;background-color: #fff;border:1px solid #c9cccf;box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.3);
-            p{font-weight: 300;color: #545454;}
-            .top-block-form-title{font-size: 46px;text-transform: uppercase;}
-            .top-block-form-input{}
+            p{font-weight: 300;color: #545454;font-size: 21px;}
+            .top-block-form-title{font-size: 46px;text-transform: uppercase;padding-bottom: 29px;}
+            .top-block-form-input{margin-bottom: 27px;}
+            input{height: 60px;width: 100%;font-size: 30px;font-weight: 300;color: #545454;font-family:'Roboto',sans-serif;border-width: 1px;border-color: rgb(162, 162, 162);border-style: solid;border-radius: 2px;padding: 0 23%;
+                &::-webkit-input-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
+                &:-moz-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
+                &::-moz-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
+                &:-ms-input-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
+            }
         }
     }
     .top-block-button{display: inline-block;max-width: 19px;opacity: 0.5;transition:all ease .2s;
