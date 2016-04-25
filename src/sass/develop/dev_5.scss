@@ -1,0 +1,17 @@
+/*second*/
+    .second{background-image: url(/images/secondBG.png); background-position:center top; min-height: 734px;    padding-top: 43px;
+        .wrap-second{width: 100%;position: relative; max-width: 950px; margin:0 auto; min-height: 607px; padding: 134px 0 0 103px;
+            .right{max-width: 370px;top: 0;right: 0;  padding: 74px 49px;}
+            .left{max-width: 540px;left: 0; bottom: 0;    padding: 74px 40px;}
+            .item{background-color: rgba(0,0,0,0.8); color: #fff; font:300 16px/26px 'Roboto'; width: 100%; position: relative;position: absolute;
+                b{font-weight: 700;text-transform: uppercase;}
+                &:before,
+                &:after{content:''; display: block;width: 41px; height: 41px; border:1px solid #9e9a98; background-color: transparent;position: absolute;}
+                &:before{top: 21px;    left: 19px; border-bottom: none; border-right: none;}
+                &:after{bottom:21px; right:19px; border-top: none; border-left: none;}
+            }
+            .title{font:400 46px/56px 'SEGOESC';color: rgba(0,0,0,0.5);    letter-spacing: -0.5px;     max-width: 200px;}
+            &:after{content:''; display: block;width: 152px; height: 152px; border:1px solid #fff; background-color: transparent;position: absolute;left:51%;top:42%;}
+        }
+    }
+/*END second*/
