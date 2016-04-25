@@ -42,12 +42,23 @@
         span{position: absolute;bottom:-39px;width: 75px;left: 50%;transform: translateX(-50%);height: 3px;}
     }
     .five-block-items{margin:0 auto;width: 100%;max-width: 970px;display: flex;flex-wrap:wrap;justify-content: space-between;align-items: center;
-        .item-block{width: 50%;display: flex;flex-wrap:nowrap;align-items: center;margin-bottom: 35px;}
-        .item-block-wrap-img{height: 70px;width: 70px;overflow: hidden;border:1px solid #bcc5c6;border-radius: 50%;position: relative;
-            img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+        .item-block{width: 50%;display: flex;flex-wrap:nowrap;align-items: center;margin-bottom: 35px;
+            &:hover{
+                .item-block-wrap-img img{animation-name: swing;}
+            }
+        }
+        .item-block-wrap-img{height: 70px;width: 70px;overflow: hidden;border:1px solid #bcc5c6;border-radius: 50%;position: relative;display: flex;flex-direction:column;justify-content:center;align-items:center;
+            img{transform-origin: top center;animation-fill-mode: both;animation-duration: 1s;will-change: transform;}
         }
         .item-block-img{margin-right: 30px;}
-        .item-block-text{padding-right: 28px;font-weight: 300;font-size: 16px;color: #000;line-height: 1.3;}
+        .item-block-text{padding-right: 28px;font-weight: 300;font-size: 16px;color: #000;line-height: 1.3;cursor: default;}
     }
+}
+@keyframes swing {
+  20% {transform: rotate3d(0, 0, 1, 15deg);}
+  40% {transform: rotate3d(0, 0, 1, -10deg);}
+  60% {transform: rotate3d(0, 0, 1, 5deg);}
+  80% {transform: rotate3d(0, 0, 1, -5deg);}
+  to {transform: rotate3d(0, 0, 1, 0deg);}
 }
 /*/five block*/

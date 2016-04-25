@@ -8,10 +8,15 @@ $(document).ready(function () {
     $("input").focusin(function () {
         $(this).closest('.form_input').find('.super-label').addClass('translator');
     });
+    
     $("input").focusout(function () {
         if ($(this).val() == '' || $(this).val().indexOf("_") != -1) {
             $(this).closest('.form_input').find('.super-label').removeClass('translator');
         }
+    });
+
+    $('.header-telefone').click(function () {
+        $(this).find('.after-frorm').addClass('active-form-header');
     });
 
     $(document).on('click touchstart', function (event) {
@@ -20,6 +25,11 @@ $(document).ready(function () {
             $('.main').removeClass('hide-hipe');
             $('.after-frorm').removeClass('active-form');
         }
+
+        if ($('.after-frorm').hasClass('active-form-header') && !$('.after-frorm ').is(event.target) && $('.after-frorm ').has(event.target).length === 0 && !$('.header-telefone').is(event.target) && $('.header-telefone').has(event.target).length === 0) { 
+            $('.after-frorm').removeClass('active-form-header');
+        }
+        
     });
 
     $('.call-phone').click(function () {

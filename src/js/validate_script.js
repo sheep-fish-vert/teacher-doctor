@@ -277,7 +277,10 @@ function someAjax(item, someUrl, successFunc, someData){
 
 $(document).ready(function(){
 
-    validate(' .contact-form-sender ', { submitFunction: validationCall });
+    validate(' .send-right-phone ', { submitFunction: validationCall });
+    validate(' .send-header ', { submitFunction: validationCall });
+    validate(' .fort-minor ', { submitFunction: validationCall });
+    
     Maskedinput2();
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    Maskedinput();
