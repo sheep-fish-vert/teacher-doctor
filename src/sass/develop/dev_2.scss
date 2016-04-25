@@ -21,8 +21,8 @@
             }
         }
     }
-    .active-form{ top: -280px; height: 255px; backface-visibility: hidden;padding: 5px;
-        span.before{content: ''; position: absolute; width: 26px; height: 26px; transform: rotate(45deg); background-color: white; right: 87px; bottom: 5px;     box-shadow: 6px 6px 10px -7px rgba(0, 0, 0, 0.2); z-index: 2; }
+    .active-form{ top: -280px; height: 260px; backface-visibility: hidden; padding: 5px 5px 12px 5px;
+        span.before{content: ''; position: absolute; width: 26px; height: 26px; transform: rotate(45deg); background-color: white; right: 87px; bottom: 6px;     box-shadow: 6px 6px 10px -7px rgba(0, 0, 0, 0.2); z-index: 2; }
         
     }
 }
