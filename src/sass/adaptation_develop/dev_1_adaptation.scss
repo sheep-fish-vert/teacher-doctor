@@ -82,7 +82,7 @@
                 .like-svg-description{position: relative;width: 100%;left:0;
                     ul{
                         li{font-size: 12px;line-height: 16px;text-align: center;
-                            &:nth-child(1){top:0;left:calc(100% - ((100% * (1 / 7)) / 2) + ((100% * (1 / 7)) / 4));
+                            &:nth-child(1){top:0;left:calc(100% - ((100% * (1 / 7)) / 2) + ((100% * (1 / 7)) / 4));text-align: right;
                                 .like-svg-prety-thin{
                                     .prety-line{width:calc(100% - 80px);}
                                 }
@@ -163,9 +163,10 @@
                 .like-svg-description{
                     ul{
                         li{position: static;margin-bottom: 40px;font-size: 16px;line-height: 22px;
+                            &:nth-child(1){text-align: center;}
                             .like-svg-prety-thin{width: 30px;margin:0 auto 10px;
                                 .prety-line{display: none;}
-                                .prety-circle{transform:scale(1);}
+                                .prety-cirlce{transform:scale(1)!important;}
                             }
                             .descript-text{width: 100%!important;position: static;transform:translate(0, 0);opacity:1;
                                 .descript-text-wrap{max-height: none;}
