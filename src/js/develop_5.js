@@ -23,7 +23,6 @@ function hoverElem(){
     }
 }
 function sliderInit(){
-
     if($(window).width()<=1280 - $.scrollbarWidth()){
         console.log('starr');
         $('.five-block .conent').slick({
@@ -35,6 +34,7 @@ function sliderInit(){
           autoplay: true,
             autoplaySpeed: 2000,
           adaptiveHeight: true,
+          swipeToSlide:true,
           responsive: [
                 {
                   breakpoint: 800,
@@ -67,10 +67,32 @@ function changeBg(){
 
     });
 }
+function tabs(){   //табчики закажите сайт
+     $('.tabs li').click(function(event) {
+        clearActive();
+        var ind = $(this).index();
+        addActive(ind,$('.list li'));
+        addActive(ind,$('.notebook li'));
+        changeImg(ind);
+    });
+     function addActive(ind,obj){
+        obj.eq(ind).addClass('active');
+     }
+     function clearActive(){
+        $('.list li').removeClass('active');
+        $('.notebook li').removeClass('active');
+     }
+     function changeImg(ind){
+        $('.screen img').removeClass('active');
+        $('.screen img').eq(ind).addClass('active');
+     }
+}
+
 $(document).ready(function(){
     hoverElem();
     sliderInit();
     changeBg();
+    tabs();
 });
 
 $(window).load(function(){
