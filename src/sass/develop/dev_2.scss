@@ -2,13 +2,13 @@
     .call-phone{display: block; width: 100px; height: 100px;text-align: center; position: relative;  background-color: #00b904; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2); background-image: radial-gradient( 50% 50%, circle closest-side, transparent 0%, rgba(0,0,0,0.1) 100%); z-index: 10; backface-visibility: hidden; cursor: pointer;
         i{font-size: 50px;}
         span.before{content: '' ; top: 0; left: 0; right: 0; bottom: 0; position: absolute; border-radius: 50%; border-width: 2px; border-color: #00b904; border-style: solid; animation: pulse1 1s ease-out infinite; z-index: 9; backface-visibility: hidden;}
-        span.after{content: '' ; top: -5px; left: -5px; right: -5px; bottom: -5px; position: absolute; border-radius: 50%; border-width: 2px; border-color: #00b904;border-style: solid; animation: pulse2 1s 0.5s ease-out infinite; z-index: 8; backface-visibility: hidden;}  
+        span.after{content: '' ; top: -5px; left: -5px; right: -5px; bottom: -5px; position: absolute; border-radius: 50%; border-width: 2px; border-color: #00b904;border-style: solid; animation: pulse2 1s 0.5s ease-out infinite; z-index: 8; backface-visibility: hidden;}
     }
-    
+
 }
-.after-frorm{position: absolute; top: -16px; height: 0; width: 350px; right: 0;  overflow: hidden; transition: all 0.5s;  
+.after-frorm{position: absolute; top: -16px; height: 0; width: 350px; right: 0;  overflow: hidden; transition: all 0.5s;
         span.before{z-index: -1; transition-delay: 0.5s;}
-        .contact-form-sender{margin-bottom: 12px; position: relative; height: calc(255px - 12px); padding: 40px 0; background-color: white;  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); z-index: 1;            
+        .contact-form-sender{margin-bottom: 12px; position: relative; height: calc(255px - 12px); padding: 40px 0; background-color: white;  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); z-index: 1;
             .contact-form-title{font-size: 22px; font-family: "Roboto", sans-serif; color: rgb(36, 36, 36); text-align: center; text-transform: uppercase; padding-bottom: 30px; font-weight: 500; }
             .contact-form-row{ padding: 10px;width: 100%;
                 .form_row{max-width: 270px; margin: 0 auto;
@@ -16,7 +16,7 @@
                     input{width: 100%; border-radius: 2px; height: 40px; border: 1px solid #a2a2a2; outline: none; text-indent: 20px; font-size: 16px; font-family: "Roboto", sans-serif; color: rgb(84, 84, 84); font-weight: 200;}
                     label{position: absolute; top:0px; left: 0; right: 0; bottom: 0; line-height: 40px;  text-indent: 20px; font-size: 16px; transition: all 0.5s; font-family: "Roboto", sans-serif; color: rgb(84, 84, 84); font-weight: 200;}
                     .translator{top: -40px; bottom: 40px; text-indent: 5px; font-size: 12px;}
-                }                
+                }
             }
             .contact-form-item{max-width: 270px; margin: 0 auto;
                 button{width: 100%; height: 50px; background-color: #e22403; border: none; border-radius: 2px; outline: none; background-image: linear-gradient( 0deg, transparent 0%, rgba(0,0,0,0.1) 100%); font-size: 16px; font-family: "Roboto", sans-serif; color: rgb(255, 255, 255); font-weight: 500; text-transform: uppercase; line-height: 2.813; }
@@ -24,13 +24,13 @@
         }
     }
     .active-form{ top: -280px; height: 260px; right: -50px; backface-visibility: hidden; padding: 5px 5px 12px 5px;
-        span.before{content: ''; position: absolute; width: 26px; height: 26px; transform: rotate(45deg); background-color: white; right: 87px; bottom: 6px;     box-shadow: 6px 6px 10px -7px rgba(0, 0, 0, 0.2); z-index: 2; } 
+        span.before{content: ''; position: absolute; width: 26px; height: 26px; transform: rotate(45deg); background-color: white; right: 87px; bottom: 6px;     box-shadow: 6px 6px 10px -7px rgba(0, 0, 0, 0.2); z-index: 2; }
     }
     .active-form-header{top: 50px; left: -40px;height: 278px; backface-visibility: hidden; padding: 24px 5px 5px 5px;
         span.before{content: ''; position: absolute; width: 26px; height: 26px; transform: rotate(45deg); background-color: white; right: calc(50% - 13px); top: 10px;  box-shadow: -7px -3px 10px -5px rgba(0, 0, 0, 0.2); z-index: 2;}
-        
-    }
 
+    }
+.doesnotuse[disabled]{background-color:rgba(0, 0, 0, 0.1) !important;cursor: default !important;}
 .doesnotuse{background-image: linear-gradient( 0deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%) !important;}
 .hide-hipe{filter: url("#blurr");}
 
@@ -58,28 +58,28 @@
     span{position: absolute; bottom: 0; left: calc(50% - 74px/2 ); height:3px; right: calc(50% - 74px/2 );}
 }
 .ten-block{ width: 100%; padding: 70px 0;
-    
+
     .row-conteiner{ position: relative; display: flex; align-items: top; justify-content: space-around; padding-top: 45px;
         .item{ width: 315px; text-align: center; position: relative;
              .top-i{padding: 0 10px; width: 100px; margin: 0 auto; background-color: white; position: relative; z-index: 2;
                 .convert{ width: 80px; height: 80px; border-radius: 50%; border: 2px solid #afafaf;  padding: 3px; transition: all 0.3s;
                     .sup{ width: 100%; height: 100%; border-radius: 50%; background-color: white;display: flex; align-items: center; justify-content: center; transition: all 0.3s;
                         i{color:#afafaf; font-size: 30px; transition: all 0.3s;}
-                    }                    
+                    }
                 }
              }
              .bot-i{font-size: 16px; font-family: "Roboto", sans-serif; color: rgb(0, 0, 0);  line-height: 1.5; padding-top: 25px; font-weight: 300; position: relative; padding-bottom: 20px; transition: all 0.3s;
                 &:before{content: ''; position: absolute; bottom: 0; left: calc(50% - 40px); right: calc(50% - 40px); height: 1px; background-color: black; opacity: 0; transition: all 0.3s; }
-                 
+
              }
-             .hover-i{font-size: 16px; font-family: "Roboto", sans-serif; color: rgb(0, 0, 0); font-weight: 300; padding-top: 20px; opacity: 0;transition: all 0.3s;             
+             .hover-i{font-size: 16px; font-family: "Roboto", sans-serif; color: rgb(0, 0, 0); font-weight: 300; padding-top: 20px; opacity: 0;transition: all 0.3s;
              }
              .plank{ position: absolute; width: 320px; height: 2px; background-color: #afafaf; left: -200px; top: 40px; z-index: 0;
-                 
+
              }
-                             
+
         }
-        
+
         .item:hover{ cursor: pointer;
             .top-i .convert{border-width: 1px;}
             .bot-i{font-weight: 700;
@@ -91,42 +91,44 @@
 }
 
 
-/* */ 
+/* */
 #map{width: 100%; height: 410px;}
-.twelve-block{ 
+.twelve-block{
     .top-form{padding: 75px 0;}
     .conteiner{ padding-top: 50px;
-        .form-part{float: left; width: 60%; 
+        .form-part{float: left; width: 60%;
             .conteiner{padding: 10px 0;}
             .contact-form-title{font-size: 30px; font-family: "Roboto", sans-serif; color: rgb(36, 36, 36);   line-height: 1.5; text-align: left;}
-            .contact-form-item{display: inline-block; width: 45%; 
+            .contact-form-item{display: inline-block; width: 45%;
                 &:first-child{margin-right: 5%; margin-left: 0;}
                 &:last-child{margin-left: calc(5% - 4px); margin-right: 0;}
             }
             .contact-form-item-textarea{padding: 10px 0;}
-            .form_input{ position: relative; 
-                input{width: 100%; padding-left: 10px; height: 50px; border: 1px solid #a2a2a2; border-radius: 3px;font-size: 16px; font-family: "Roboto", sans-serif;  color: rgb(84, 84, 84); } 
+            .form_input{ position: relative;
+                input{width: 100%; padding-left: 10px; height: 50px; border: 1px solid #a2a2a2; border-radius: 3px;font-size: 16px; font-family: "Roboto", sans-serif;  color: rgb(84, 84, 84); }
                 textarea{ padding: 16px 10px; width: 100%; height: 80px;  border: 1px solid #a2a2a2; border-radius: 3px; resize: none; font-size: 16px; font-family: "Roboto",sans-serif; color: rgb(84, 84, 84); }
-                label{position: absolute; top: 16px; left: 10px; font-size: 16px; font-family: "Roboto";  color: rgb(84, 84, 84); transition: all 0.3s;} 
+                label{position: absolute; top: 16px; left: 10px; font-size: 16px; font-family: "Roboto";  color: rgb(84, 84, 84); transition: all 0.3s;}
                 .translator{top: -10px; left: 0; font-size: 10px; opacity: 0;}
-                .errorText{display: none !important;}          
+                .errorText{display: none !important;}
             }
             .contact-form-row-sub{  width: 100%; padding: 10px 0;
                 .contact-form-item{margin: 0; width: 100%;}
-                button{ width: 100%; max-width: 270px; height: 50px; border: none; color: white; border-radius: 3px; text-transform: uppercase; font-size: 16px; font-family: "Roboto", sans-serif; letter-spacing: 3px; font-weight: 500;}
+                button{ width: 100%; max-width: 270px; height: 50px; border: none; color: white; border-radius: 3px; text-transform: uppercase; font-size: 16px; font-family: "Roboto", sans-serif; letter-spacing: 3px; font-weight: 500;cursor: pointer;
+                    &.doesnotuse{cursor: default;}
+                }
             }
         }
         .content-send{float: right; width: 40%;
             ul{ padding-left: 125px;
                 li{ position: relative; padding: 15px 0;
-                    .cont{display: block; width: 100%; text-decoration: none; padding-left: 30px;font-size: 18px; font-family: "Roboto", sans-serif; font-weight: 300; color: rgb(36, 36, 36); 
+                    .cont{display: block; width: 100%; text-decoration: none; padding-left: 30px;font-size: 18px; font-family: "Roboto", sans-serif; font-weight: 300; color: rgb(36, 36, 36);
                         i, img {position: absolute; top:15px; left: 0; font-size: 18px; color: #00bd04}
-                    } 
-                    a:hover{font-weight: 500;}                
+                    }
+                    a:hover{font-weight: 500;}
                 }
             }
         }
-        
+
     }
 }
 
