@@ -35,3 +35,22 @@
         }
     }
 /*END third*/
+/*five*/
+    @media screen and (max-width: 1400px){
+        .five-block{
+            .wrap-five{
+                .item{min-height: 550px; padding-top: 40px;}
+            }
+        }
+    }
+    @media screen and (max-width: 1280px){
+        .five-block{
+            .wrap-five{
+                .title{font-size: 32px;line-height: 42px;}
+                .conent{width:100%;margin-bottom: 0;}
+                .item{float:none; display: inline-block;vertical-align: top; width: auto;padding-left: 10px; padding-right: 10px;}
+                .img{height: 130px;margin-bottom: 47px; border:2px solid #fff; opacity: 1;}
+            }
+        }
+    }
+/*END five*/
