@@ -93,6 +93,12 @@
         }
     }
     /*/seven-block*/
+
+    /*footer*/
+    .footer{
+        .footer-wrap{height: 115px;}
+    }
+    /*/footer*/
 }
 @media screen and (max-width: 992px){
     /*five block*/
@@ -178,7 +184,11 @@
 
 }
 @media screen and (max-width: 767px){
-
+    /*footer*/
+    .footer{
+        .footer-wrap{height: auto;padding-bottom: 20px;flex-direction:column;justify-content: center;    align-items: center;padding-top: 20px;}
+    }
+    /*/footer*/
 }
 @media screen and (max-width: 666px){
 

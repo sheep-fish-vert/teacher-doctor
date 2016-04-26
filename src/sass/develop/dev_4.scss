@@ -135,3 +135,19 @@
     }
 }
 /*/eleven-block*/
+
+/*footer*/
+.footer{overflow: hidden;
+    .footer-wrap{max-width: 900px;width: 100%;margin:0 auto;height: 150px;display: flex;justify-content: space-between;align-items: flex-start;padding-top: 25px;padding-left: 15px;padding-right: 15px;}
+
+    .icon-footer-logo{height: 62px;width: 62px;background: url('/images/footer-logo.png') center center no-repeat;display: inline-block;}
+    .footer-left{font-size: 18px;color: #000000;font-weight: 300;
+        span{vertical-align: middle;margin-right: 5px;}
+    }
+    .footer-right{padding-top: 11px;
+        span,i{display: inline-block;}
+        i{color: #01b30e;position: relative;top: 4px;}
+        a{font-weight: 300;font-size: 18px;color: #000;text-decoration: none;vertical-align: middle;}
+    }
+}
+/*/footer*/
