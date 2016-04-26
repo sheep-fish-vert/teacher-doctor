@@ -86,20 +86,48 @@ function getMaterialDesignColors(){
 
         // /diagram cirlces color from material design styles
 
+        // if more text show scroll arrow
+
+            function addOrRemoveArrow(){
+
+                $('.like-svg-description li').each(function(index, el) {
+
+                    var textWrap = $(this).find('.descript-text-main');
+                    var textOverflow = $(this).find('.descript-text');
+
+                    if(textWrap.height() > textOverflow.height()){
+
+                        textOverflow.addClass('scroll');
+
+                    }else{
+
+                        textOverflow.removeClass('scroll');
+
+                    }
+
+                });
+
+            }
+
+        // /if more text show scroll arrow
+
         // diagram function calling
 
         circlesBlockHeight();
         diagramColors();
+        addOrRemoveArrow();
 
         $(window).load(function(){
 
             circlesBlockHeight();
+            addOrRemoveArrow();
 
         });
 
         $(window).resize(function(){
 
             circlesBlockHeight();
+            addOrRemoveArrow();
 
         });
 
