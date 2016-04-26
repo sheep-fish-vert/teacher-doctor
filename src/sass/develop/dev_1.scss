@@ -101,3 +101,163 @@
     }
 
 /*  /header */
+
+/* nine-block */
+
+    .nine-block{background-color: #f0f0f0;padding:60px 0 90px 0;
+        .title{text-align: center;font-size: 46px;color:#242424;position: relative;padding-bottom: 20px;margin-bottom: 45px;
+            span{max-width: 76px;width: 100%;height: 3px;display:block;position: absolute;left:calc(50% - 38px);bottom:0;}
+        }
+        .title-descript{text-align: center;font-weight: 300;font-size: 22px;color:#242424;line-height: 32px;margin-bottom: 55px;
+            span{font-weight: 700;}
+            .big{
+                span{text-transform: uppercase;}
+            }
+        }
+
+        // diagram styles
+        .like-svg-container{position: relative;
+
+            // diagram corner styles
+            .corner{position: absolute;opacity: 0;display: block;transition:opacity 300ms ease;
+                &:before, &:after{content:'';display: block;background-color:#898989;position: absolute;}
+                &:before{width: 1px;height: 40px;}
+                &:after{width: 40px;height: 1px;}
+                &.left-top{top:-20px;left:0;
+                    &:before, &:after{left:0;top:0;}
+                }
+                &.right-bottom{bottom:-70px;right:0;
+                    &:before, &:after{right:0;bottom:0;}
+                }
+            }
+            // /diagram corner styles
+
+            // diagram lines color
+            .like-svg-graf-wrap{position: relative;width: 50%;
+                .like-svg-graf-text{position: absolute;z-index:1;left: 65%;top:40%;transform:translate(-50%, -50%);color:#fff;max-width: 330px;width: 100%;font-size: 46px;font-weight: 500;text-align: right;opacity:0;transition:opacity 300ms ease 1300ms;}
+                .like-svg-graf{overflow: hidden;position: relative;
+                    .like-svg-circles{position:absolute;top:0;left:0;width: 200%;height: 100%;overflow: hidden;transform-origin:50% 100%;transform:rotate(35deg);
+                        .like-svg-circle-wrap{position:absolute;left:50%;bottom:0;overflow:hidden;transform-origin:50% 100%;transform:rotate(56deg);
+                            &:nth-child(1){width: calc(100% * (1 / 7));height:calc(100% * (1 / 7));margin-left:calc(((100% / 2) * (1 / 7)) * (-1));transition:transform 300ms ease 0ms;}
+                            &:nth-child(2){width: calc(100% * (2 / 7));height:calc(100% * (2 / 7));margin-left:calc(((100% / 2) * (2 / 7)) * (-1));transition:transform 500ms ease 100ms;}
+                            &:nth-child(3){width: calc(100% * (3 / 7));height:calc(100% * (3 / 7));margin-left:calc(((100% / 2) * (3 / 7)) * (-1));transition:transform 700ms ease 300ms;}
+                            &:nth-child(4){width: calc(100% * (4 / 7));height:calc(100% * (4 / 7));margin-left:calc(((100% / 2) * (4 / 7)) * (-1));transition:transform 900ms ease 500ms;}
+                            &:nth-child(5){width: calc(100% * (5 / 7));height:calc(100% * (5 / 7));margin-left:calc(((100% / 2) * (5 / 7)) * (-1));transition:transform 1100ms ease 700ms;}
+                            &:nth-child(6){width: calc(100% * (6 / 7));height:calc(100% * (6 / 7));margin-left:calc(((100% / 2) * (6 / 7)) * (-1));transition:transform 1300ms ease 900ms;}
+                            &:nth-child(7){width: calc(100% * (7 / 7));height:calc(100% * (7 / 7));margin-left:calc(((100% / 2) * (7 / 7)) * (-1));transition:transform 1500ms ease 1100ms;}
+                            .inside-circle{height:200%;border-radius: 50%;}
+                        }
+                    }
+                }
+            }
+            // /diagram lines styles
+
+            // diagram descript styles
+            .like-svg-description{width: 50%;left:50%;top:0;right:0;bottom:0;position: absolute;
+                ul{height: 100%;position: relative;
+                    li{color:#242424;font-weight: 300;font-size: 16px;line-height:20px;position: absolute;margin-top: -15px;width: 100%;
+                        &:nth-child(1){top:calc(100% * (1 / 7));
+                            .like-svg-prety-thin{
+                                .prety-cirlce{transition:transform 300ms ease 1300ms;}
+                                .prety-line{transition:opacity 300ms ease 1400ms;}
+                            }
+                            .descript-text{transition:opacity 300ms ease 1400ms;}
+                        }
+                        &:nth-child(2){top:calc(100% * (2 / 7));
+                            .like-svg-prety-thin{
+                                .prety-cirlce{transition:transform 300ms ease 1100ms;}
+                                .prety-line{transition:opacity 300ms ease 1200ms;}
+                            }
+                            .descript-text{transition:opacity 300ms ease 1200ms;}
+                        }
+                        &:nth-child(3){top:calc(100% * (3 / 7));
+                            .like-svg-prety-thin{
+                                .prety-cirlce{transition:transform 300ms ease 900ms;}
+                                .prety-line{transition:opacity 300ms ease 1000ms;}
+                            }
+                            .descript-text{transition:opacity 300ms ease 1000ms;}
+                        }
+                        &:nth-child(4){top:calc(100% * (4 / 7));
+                            .like-svg-prety-thin{
+                                .prety-cirlce{transition:transform 300ms ease 700ms;}
+                                .prety-line{transition:opacity 300ms ease 800ms;}
+                            }
+                            .descript-text{transition:opacity 300ms ease 800ms;}
+                        }
+                        &:nth-child(5){top:calc(100% * (5 / 7));
+                            .like-svg-prety-thin{
+                                .prety-cirlce{transition:transform 300ms ease 500ms;}
+                                .prety-line{transition:opacity 300ms ease 600ms;}
+                            }
+                            .descript-text{transition:opacity 300ms ease 600ms;}
+                        }
+                        &:nth-child(6){top:calc(100% * (6 / 7));
+                            .like-svg-prety-thin{
+                                .prety-cirlce{transition:transform 300ms ease 300ms;}
+                                .prety-line{transition:opacity 300ms ease 400ms;}
+                            }
+                            .descript-text{transition:opacity 300ms ease 400ms;}
+                        }
+                        &:nth-child(7){top:calc(100% * (7 / 7));
+                            .like-svg-prety-thin{
+                                .prety-cirlce{transition:transform 300ms ease 100ms;}
+                                .prety-line{transition:opacity 300ms ease 200ms;}
+                            }
+                            .descript-text{transition:opacity 300ms ease 200ms;}
+                        }
+
+                        .like-svg-prety-thin{width: 75px;position: relative;margin-left:-15px;display: flex;align-items: center;justify-content: flex-start;
+                            .prety-cirlce{width: 30px;height: 30px;border-radius: 50%;background-color: rgba(20, 74, 31, .5);position: relative;z-index: 1;transform:scale(0);
+                                &:before{content:'';display: block;position: absolute;left:calc(50% - 15px);top:calc(50% - 15px);width:30px;height: 30px;background-color: #fff;transform:scale(.2);border-radius: 50%;}
+                            }
+                            .prety-line{width: calc(100% - 15px);margin-left: -15px;position: relative;z-index: 0;background-color:#144a1f;height:1px;opacity:0;
+                                &:after{content:'';position:absolute;right:0;top:-4px;width: 8px;height: 8px;border-radius: 50%;background-color:#144a1f;}
+                            }
+                        }
+                        .descript-text{width: calc(100% - 75px);left:75px;top:50%;position: absolute;transform:translate(0, -50%);overflow:hidden;opacity:0;
+                            .descript-text-wrap{margin-right:-20px;overflow-y:scroll;max-height:65px;
+                                .descript-text-main{padding-right: 20px;}
+                            }
+                        }
+
+                    }
+                }
+            }
+            // /diagram descript styles
+
+            // diagram styles when add class show
+            &.show{
+
+                .corner{opacity: 1;}
+
+                .like-svg-graf-wrap{
+                    .like-svg-graf-text{opacity: 1;}
+                    .like-svg-graf{
+                        .like-svg-circles{
+                            .like-svg-circle-wrap{transform:rotate(0deg);}
+                        }
+                    }
+                }
+
+                .like-svg-description{
+                    ul{
+                        li{
+                            .like-svg-prety-thin{
+                                .prety-cirlce{transform:scale(1);}
+                                .prety-line{opacity:1;}
+                            }
+                            .descript-text{opacity: 1;}
+                        }
+                    }
+                }
+
+            }
+            // /diagram styles when add class show
+
+        }
+
+        // /diagram styles
+
+    }
+
+/* /nine-block */
