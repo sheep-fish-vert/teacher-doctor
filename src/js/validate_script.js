@@ -124,6 +124,34 @@ function validationCall(form) {
     });
 }
 
+function validationCall2(form) {
+    
+    $(form).find('button').prop("disabled", true);
+    $(form).find('button').addClass('doesnotuse');
+    $(form).find('input').prop("disabled", true);
+    
+  var thisForm = $(form);
+  var formSur = thisForm.serialize();
+    
+    $.ajax({
+        url : thisForm.attr('action'),
+        data: formSur,
+        method:'POST',
+        success : function(data){
+            if ( data.trim() == 'true') {
+               thisForm.trigger("reset");
+               //popNext("#call_success", "call-popup");
+               $(form).find('button').prop("disabled", false);
+                $(form).find('button').removeClass('doesnotuse');
+                $(form).find('input').prop("disabled", false);
+            }
+            else {
+               thisForm.trigger('reset');
+            }
+
+        }
+    });
+}
 /* Отправка формы с файлом */
 /* не использовать input[type="file"] в форме и не забыть дописать форме enctype="multipart/form-data" */
 function validationCallDocument(form){
@@ -280,6 +308,8 @@ $(document).ready(function(){
     validate(' .send-right-phone ', { submitFunction: validationCall });
     validate(' .send-header ', { submitFunction: validationCall });
     validate(' .fort-minor ', { submitFunction: validationCall });
+    
+    validate(' .form-twelwe ', { submitFunction: validationCall2 });
     
     Maskedinput2();
    validate('#call-popup .contact-form', {submitFunction:validationCall});
