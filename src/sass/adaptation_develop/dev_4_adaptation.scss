@@ -5,7 +5,40 @@
 
 }
 @media screen and (max-width: 1366px){
+    /*seven-block*/
+    .seven-block{
+        .item{
+            .item-wrap{height: 248px;}
+            &.item-5{
+                &:after{}
+                .item-wrap{
+                    &:after{left: -14px;}
+                    &:before{right: -14px;}
+                }
+                .title-seven{
+                    span{}
+                }
+            }
+            &.item-7,&.item-8{
+                .item-count{
+                    .item-text{width: calc(100% + 215px);}
+                }
+            }
+            &:after{}
+            &:not(.item-5):hover{
+                .item-wrap{}
+                &:after{}
+            }
 
+            .item-count{
+                span{font-size: 200px;margin-left: -22px;margin-top: -44px;}
+                .item-text{width: 100%;
+                    span{}
+                }
+            }
+        }
+    }
+    /*/seven-block*/
 }
 @media screen and (max-width: 1280px){
 
@@ -25,6 +58,41 @@
         }
     }
     /*/top block*/
+
+    /*seven-block*/
+    .seven-block{
+        .item{font-size: 14px;
+            .item-wrap{ height: 220px;}
+            &.item-5{font-size: 30px;
+                &:after{}
+                .item-wrap{
+                    &:after{}
+                    &:before{}
+                }
+                .title-seven{
+                    span{}
+                }
+            }
+            &.item-7,&.item-8{
+                .item-count{
+                    .item-text{width: calc(100% + 125px);}
+                }
+            }
+            &:after{}
+            &:not(.item-5):hover{
+                .item-wrap{}
+                &:after{}
+            }
+
+            .item-count{
+                span{font-size: 165px;margin-left: -15px;margin-top: -34px;}
+                .item-text{line-height: 1;
+                    span{}
+                }
+            }
+        }
+    }
+    /*/seven-block*/
 }
 @media screen and (max-width: 992px){
     /*five block*/
@@ -56,6 +124,36 @@
         .top-block-button{max-width: 21px;margin: 21px 0px;}
     }
     /*/top block*/
+
+    /*seven-block*/
+    .seven-block{flex-direction:column;
+        .item{width: 100%;
+            .item-wrap{height: auto;min-height: 110px;padding: 15px;}
+            &.item-4{background-color: #25282d;}
+            &.item-5{order:-1;text-align: center;padding: 25px;
+                .item-wrap{
+                    &:after{display: none;}
+                    &:before{display: none;}
+                }
+                .item-count{justify-content:center;}
+                .title-seven{font-size: 32px;
+                    span{ bottom: -10px;}
+                }
+            }
+            &.item-7{background-color: #535b65;}
+            &.item-7,&.item-8{width: 100%;
+                .item-count{
+                    .item-text{max-width: 500px;}
+                }
+            }
+            &:after{display: none;}
+            .item-count{display: flex;align-items:center;width: 100%;height: 100%;
+                span{margin-left: 0;margin-top: 0;line-height: 0.8;}
+                .item-text{position: relative;left: 20px;top: 0;max-width: 500px;font-size: 16px;}
+            }
+        }
+    }
+    /*/seven-block*/
 }
 @media screen and (max-width: 768px){
 
@@ -118,6 +216,33 @@
         }
     }
     /*/top block*/
+
+    /*seven-block*/
+    .seven-block{
+        .item{
+            .item-wrap{padding: 10px;}
+            &.item-4{}
+            &.item-5{
+                .item-count{}
+                .title-seven{
+                    span{}
+                }
+            }
+            &.item-7{}
+            &.item-7,&.item-8{
+                .item-count{
+                    .item-text{max-width: 100%;width: 100%;position: static;margin-left: 10px;font-size: 13px;}
+                }
+            }
+            .item-count{
+                span{font-size: 90px;}
+                .item-text{ font-size: 13px;position: static;margin-left: 10px;
+                    span{display: none;}
+                }
+            }
+        }
+    }
+    /*/seven-block*/
 }
 @media screen and (max-width: 350px){
     /*top block*/
