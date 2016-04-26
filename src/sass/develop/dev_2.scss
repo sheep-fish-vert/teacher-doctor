@@ -54,11 +54,11 @@
     }
 }
 
-
+.title-text{text-align: center; font-size: 46px; line-height: 1.3; font-weight: 400; font-family: 'Roboto',sans-serif;  position: relative;  position: relative; padding-bottom: 33px; max-width: 780px; margin: 0 auto;
+    span{position: absolute; bottom: 0; left: calc(50% - 74px/2 ); height:3px; right: calc(50% - 74px/2 );}
+}
 .ten-block{ width: 100%; padding: 70px 0;
-    .title-text{text-align: center; font-size: 46px; line-height: 1.3; font-weight: 400; font-family: 'Roboto',sans-serif;  position: relative;  position: relative; padding-bottom: 33px; max-width: 780px; margin: 0 auto;
-        span{position: absolute; bottom: 0; left: calc(50% - 74px/2 ); height:3px; right: calc(50% - 74px/2 ); }
-    }
+    
     .row-conteiner{ position: relative; display: flex; align-items: top; justify-content: space-around; padding-top: 45px;
         .item{ width: 315px; text-align: center; position: relative;
              .top-i{padding: 0 10px; width: 100px; margin: 0 auto; background-color: white; position: relative; z-index: 2;
@@ -89,3 +89,44 @@
         }
     }
 }
+
+
+/* */ 
+#map{width: 100%; height: 410px;}
+.twelve-block{ 
+    .top-form{padding: 75px 0;}
+    .conteiner{ padding-top: 50px;
+        .form-part{float: left; width: 60%; 
+            .conteiner{padding: 10px 0;}
+            .contact-form-title{font-size: 30px; font-family: "Roboto", sans-serif; color: rgb(36, 36, 36);   line-height: 1.5; text-align: left;}
+            .contact-form-item{display: inline-block; width: 45%; 
+                &:first-child{margin-right: 5%; margin-left: 0;}
+                &:last-child{margin-left: calc(5% - 4px); margin-right: 0;}
+            }
+            .contact-form-item-textarea{padding: 10px 0;}
+            .form_input{ position: relative; 
+                input{width: 100%; padding-left: 10px; height: 50px; border: 1px solid #a2a2a2; border-radius: 3px;font-size: 16px; font-family: "Roboto", sans-serif;  color: rgb(84, 84, 84); } 
+                textarea{ padding: 16px 10px; width: 100%; height: 80px;  border: 1px solid #a2a2a2; border-radius: 3px; resize: none; font-size: 16px; font-family: "Roboto",sans-serif; color: rgb(84, 84, 84); }
+                label{position: absolute; top: 16px; left: 10px; font-size: 16px; font-family: "Roboto";  color: rgb(84, 84, 84); transition: all 0.3s;} 
+                .translator{top: -10px; left: 0; font-size: 10px; opacity: 0;}             
+            }
+            .contact-form-row-sub{  width: 100%; padding: 10px 0;
+                .contact-form-item{margin: 0; width: 100%;}
+                button{ width: 100%; max-width: 270px; height: 50px; border: none; color: white; border-radius: 3px; text-transform: uppercase; font-size: 16px; font-family: "Roboto", sans-serif; letter-spacing: 3px; font-weight: 500;}
+            }
+        }
+        .content-send{float: right; width: 40%;
+            ul{ padding-left: 125px;
+                li{ position: relative; padding: 15px 0;
+                    .cont{display: block; width: 100%; text-decoration: none; padding-left: 30px;font-size: 18px; font-family: "Roboto", sans-serif; font-weight: 300; color: rgb(36, 36, 36); 
+                        i, img {position: absolute; top:15px; left: 0; font-size: 18px; color: #00bd04}
+                    } 
+                    a:hover{font-weight: 500;}                
+                }
+            }
+        }
+        
+    }
+}
+
+/* */
