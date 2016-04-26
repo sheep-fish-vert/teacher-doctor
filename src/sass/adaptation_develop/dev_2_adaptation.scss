@@ -19,9 +19,20 @@
             .plank{display: none;}
         }
     }
-
+    .twelve-block .conteiner {
+        .form-part { float: none;  width: 100%;  padding: 0 20px;
+            .contact-form-title { text-align: center;}
+            .contact-form-row-sub .contact-form-item { display: flex; align-items: center; justify-content: center; padding-bottom: 20px;} 
+        }
+        .content-send { float: none; width: 100%; padding: 0 20px;
+            ul{padding: 0; display: flex; align-items: center; flex-wrap: wrap; justify-content: space-around;
+                li{min-width: 300px;}                
+            }
+        }      
+    }
 }
 @media screen and (max-width: 767px){
+    /* forms */
     .super-button{width: 50px; height: 50px; right: 20px; bottom: 20px;   
         .call-phone { width: 50px;  height: 50px;
             i {font-size: 35px;}
@@ -44,7 +55,22 @@
             button[type=submit]{font-size: 16px; height: 46px;}
         }
     }
+    /* forms */
+
+/* ten block and twelve block */
+    .ten-block{padding: 20px 0;}
+    .twelve-block{padding: 20px 0;
+        .conteiner .form-part .contact-form-row-sub button {max-width: 100%;}
+        .conteiner .form-part .contact-form-item { display:block; width: 100%; margin: 0 !important; padding-bottom: 20px;
+            &:last-child{padding-bottom: 0;}        
+        }
+        .top-form {
+            padding: 20px 0;
+        }
+    }
+    /* ten block and twelve block */
 }
+
 @media screen and (max-width: 666px){
 
 }
