@@ -6,15 +6,15 @@ function getMaterialDesignColors(){
     var colorsObject = {};
 
     if($('.mdl-color--primary').length){
-        colorsObject.primary = $('.mdl-color--primary').css('background-color');
+        colorsObject.primary = $('.mdl-color--primary').css('background-color').match(/\d+/g);
     }else if($('.mdl-color-text--primary').length){
-        colorsObject.primary = $('.mdl-color-text--primary').css('color');
+        colorsObject.primary = $('.mdl-color-text--primary').css('color').match(/\d+/g);
     }
 
     if($('.mdl-color--accent').length){
-        colorsObject.accent = $('.mdl-color--accent').css('background-color');
+        colorsObject.accent = $('.mdl-color--accent').css('background-color').match(/\d+/g);
     }else if($('.mdl-color-text--accent').length){
-        colorsObject.accent = $('.mdl-color-text--accent').css('color');
+        colorsObject.accent = $('.mdl-color-text--accent').css('color').match(/\d+/g);
     }
 
     return colorsObject;
@@ -25,32 +25,104 @@ function getMaterialDesignColors(){
 
 // header telefone hover
 
-function headerTelefoneHover(hoverColor){
+    function headerTelefoneHover(hoverColor){
 
-    $('.header-telefone').hover(
-        function(){
-            $(this).find('.telefone-number-wrap').css('color', hoverColor);
-        },
-        function(){
-            $(this).find('.telefone-number-wrap').removeAttr('style');
-        }
-    );
+        $('.header-telefone').hover(
+            function(){
+                $(this).find('.telefone-number-wrap').css('color', 'rgb(' + hoverColor[0] + ', ' + hoverColor[1] + ', ' + hoverColor[2] + ')');
+            },
+            function(){
+                $(this).find('.telefone-number-wrap').removeAttr('style');
+            }
+        );
 
-}
+    }
 
 // /header telefone hover
 
+// diagram scripts
+
+    function diagramScripts(colorsObject){
+
+        // block height for circles in diagram
+
+            function circlesBlockHeight(colorsObject){
+
+                var mboxHalfWidth = parseInt($('.nine-block .mbox').width())/2;
+
+                $('.like-svg-graf').height(mboxHalfWidth);
+
+            }
+
+        // /block height for circles in diagram
+
+        // diagram circles color from material design styles
+
+            function diagramColors(){
+
+                var colorR = parseInt(colorsObject.accent[0]);
+                var colorG = parseInt(colorsObject.accent[1]);
+                var colorB = parseInt(colorsObject.accent[2]);
+
+                var changePointR = (colorR/2)/$('.inside-circle').length;
+                var changePointG = (colorG/2)/$('.inside-circle').length;
+                var changePointB = (colorB/2)/$('.inside-circle').length;
+
+                var zIndex = $('.inside-circle').length;
+
+                $('.inside-circle').each(function(index, el) {
+
+                    $(this).css({'background-color':'rgb(' + colorR + ', '+ colorG +',' + colorB + ')'});
+                    colorR = parseInt(colorR - changePointR);
+                    colorG = parseInt(colorG - changePointG);
+                    colorB = parseInt(colorB - changePointB);
+
+                    $(this).parent().css({'z-index':zIndex});
+                    zIndex--;
+
+                });
+
+            }
+
+        // /diagram cirlces color from material design styles
+
+        // diagram function calling
+
+        circlesBlockHeight();
+        diagramColors();
+
+        $(window).load(function(){
+
+            circlesBlockHeight();
+
+        });
+
+        $(window).resize(function(){
+
+            circlesBlockHeight();
+
+        });
+
+        // /diagram function calling
+
+    }
+
+// /diagram scripts
+
 $(document).ready(function(){
 
+    var colorsObject = getMaterialDesignColors();
 
+    headerTelefoneHover(colorsObject.accent);
+
+    diagramScripts(colorsObject);
 
 });
 
 $(window).load(function(){
 
-    var colorsObject = getMaterialDesignColors();
 
-    headerTelefoneHover(colorsObject.accent);
+
 
 });
 
