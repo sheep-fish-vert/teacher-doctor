@@ -124,7 +124,7 @@ $(document).ready(function () {
     $('form').find('button').addClass('doesnotuse');
 
 
-    $('input').on('change', function () {
+    $('input, textarea').on('change', function () {
         if (!$(this).closest('form').hasClass('form-twelwe')) {
             if ($(this).val() != '' || $(this).val().indexOf("_") != -1) {
                 $(this).closest('form').find('button').prop("disabled", false);
