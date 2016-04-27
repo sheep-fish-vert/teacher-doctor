@@ -30,7 +30,7 @@
         &::-moz-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
         &:-ms-input-placeholder {color:#545454;font-size: 30px;font-weight: 300;}
     }
-    button[type=submit]{height: 60px;color: #fff;text-transform: uppercase;width: 100%;max-width: 370px;margin:0 auto;position: relative;border:none;cursor: pointer;font-size: 22px;font-weight: 500;margin-bottom: 29px;
+    button[type=submit]{height: 60px;color: #fff;text-transform: uppercase;width: 100%;max-width: 370px;margin:0 auto;position: relative;border:none;cursor: pointer;font-size: 22px;font-weight: 500;margin-bottom: 29px; cursor: pointer;
         span{position: absolute;width: 100%;left: 0;top: 50%;transform: translateY(-50%);}
     }
 }
@@ -110,9 +110,9 @@
     .item-images-wrap{width: 155px;height: 155px;border-radius: 50%;overflow: hidden;position: relative;
         img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);max-width: 100%;}
     }
-    .item-wrap{display: flex;flex-direction:wrap;align-items:flex-start;justify-content:center;max-width: 960px;margin:0 auto;padding: 0 80px;cursor: default;
-        .item-images{margin-right: 40px;}
-        .item-text{}
+    .item-wrap{display: flex;align-items:flex-start;justify-content:center;max-width: 960px;margin:0 auto;padding: 0 80px;cursor: default;
+        .item-images{margin-right: 40px; width: 155px;}
+        .item-text{width: calc(100% - 155px);}
 
         .item-text-title{font-size: 24px;font-weight: bold;margin-bottom: 40px;position: relative;
             &:after{position: absolute;bottom:-20px;content: '';left: 0;height: 1px;background-color: #fff;width: 80px;}
