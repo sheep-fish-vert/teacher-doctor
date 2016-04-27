@@ -117,6 +117,43 @@
                     }
                 }
             }
+            .sliderok{padding-top: 44px;min-height: 539px;
+                .sliderius{width:60%; display: inline-block;margin-left: -4px;vertical-align: top; position: relative;}
+                .trollslider{position: relative;width: 534px;height: 416px;margin: 0 auto;}
+                .slide-one{ position: absolute;top:55px;width: 424px;height: 331px;
+
+                    &.active{top:0;width: 534px;height: 416px;z-index: 500;padding: 0;left: 0;}
+                    &.prev{left: -52px; cursor: pointer;}
+                    &.next{right: -52px; cursor: pointer;}
+                    &.animNext{animation: nextNextAnim 500ms linear;}
+                    &.animPrev{animation: prevNextAnim 500ms linear;}
+                    &.nextAnim{animation: nextActiveAnim 500ms linear;}
+                    &.prevAnim{animation: prevActiveAnim 500ms linear;}
+                }
+                .txt{width: 40%; display: inline-block; margin-left: -4px;padding-top: 60px;
+                    a{text-decoration: none;}
+                }
+            }
         }
     }
+@keyframes nextActiveAnim {
+  0%{width: 534px; height: 416px; left: 0;top: 0;z-index: 501;}
+  50%{width: 424px; height: 331px;  left: 0;top: 55px;z-index: 501;}
+  100%{width: 424px; height: 331px; left: -52px;top: 55px;z-index: 501;}
+}
+@keyframes prevActiveAnim {
+  0%{width: 534px; height: 416px; right: 0;top: 0;left: auto;z-index: 501;}
+  50%{width: 424px; height: 331px;  right: 0;top: 55px;left: auto;z-index: 501;}
+  100%{width: 424px; height: 331px; right: -52px;top: 55px;left: auto;z-index: 501;}
+}
+@keyframes nextNextAnim {
+  0%{width: 424px; height: 331px; right: -52px; left: auto; top: 55px; z-index: 501;}
+  50%{width: 534px; height: 416px; right: -52px; left: auto;top: 0;z-index: 501;}
+  100%{width: 534px; height: 416px; right: 0; left: auto; top: 0;z-index: 501;}
+}
+@keyframes prevNextAnim {
+  0%{width: 424px; height: 331px; right: auto; left: -52px;top: 55px; z-index: 502;}
+  50%{width: 534px; height: 416px; right: auto; left: -52px; top: 0;z-index: 502;}
+  100%{width: 534px; height: 416px; right: auto; left: 0; top: 0;z-index: 502;}
+}
 /*END eight*/

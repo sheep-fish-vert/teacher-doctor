@@ -54,3 +54,49 @@
         }
     }
 /*END five*/
+/*eight*/
+    @media screen and (max-width: 1280px) {
+        .eight-block {
+            .wrap-eight {
+                .title{font-size: 32px;line-height: 42px;}
+                .tabs {
+                    .list { width: 100%; }
+                    .notebook { width: 100%;
+                        .img { width: 100%;
+                            .bg { margin: 0 auto; }
+                        }
+                    }
+                }
+                .sliderok {
+                    .sliderius{width:100%;}
+
+                    .trollslider{position: relative;width:auto;height:auto;margin: 0 auto;}
+                    .slide-one{ position: relative;top:0;width: auto;height: auto;
+                        img{ margin: 0 auto;}
+                    }
+                    .txt { padding-left: 10px; width:100%; padding-bottom: 30px;}
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 666px) {
+        .eight-block {
+            .wrap-eight {font:300 16px/26px 'Roboto';
+                .tabs {
+                    .list {
+                        span{top: 19%; left: 0;
+                            &:before,
+                            &:after{ display: none;}
+                        }
+                        li{ margin-bottom: 0; padding-left: 10px; line-height: 22px;}
+                    }
+                    .notebook {
+                        .img { margin-bottom: 10px;
+                            .bg { width: 300px; height:240px;  padding: 10px; background-image: none;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+/*END eight*/
