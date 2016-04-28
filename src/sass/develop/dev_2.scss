@@ -7,7 +7,8 @@
 
 }
 .after-frorm{position: absolute; top: -16px; height: 0; width: 350px; right: 0;  overflow: hidden; transition: all 0.5s;
-        span.before{z-index: -1; transition-delay: 0.5s;}
+&.fixer-jump{right: -50px;}
+        span.before{z-index: -1; transition-delay: 0.5s; padding: 0px 5px 0px 5px;}
         .contact-form-sender{margin-bottom: 12px; position: relative; height: calc(255px - 12px); padding: 40px 0; background-color: white;  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); z-index: 1;
             .contact-form-title{font-size: 22px; font-family: "Roboto", sans-serif; color: rgb(36, 36, 36); text-align: center; text-transform: uppercase; padding-bottom: 30px; font-weight: 500; }
             .contact-form-row{ padding: 10px;width: 100%;
@@ -16,6 +17,7 @@
                     input{width: 100%; border-radius: 2px; height: 40px; border: 1px solid #a2a2a2; outline: none; text-indent: 20px; font-size: 16px; font-family: "Roboto", sans-serif; color: rgb(84, 84, 84); font-weight: 200;}
                     label{position: absolute; top:0px; left: 0; right: 0; bottom: 0; line-height: 40px;  text-indent: 20px; font-size: 16px; transition: all 0.5s; font-family: "Roboto", sans-serif; color: rgb(84, 84, 84); font-weight: 200;}
                     .translator{top: -40px; bottom: 40px; text-indent: 5px; font-size: 12px;}
+                    .errorText{display: none !important; }
                 }
             }
             .contact-form-item{max-width: 270px; margin: 0 auto;
@@ -23,7 +25,7 @@
             }
         }
     }
-    .active-form{ top: -280px; height: 260px; right: -50px; backface-visibility: hidden; padding: 5px 5px 12px 5px;
+    .active-form{ top: -280px; height: 260px; right: 0px; backface-visibility: hidden; padding: 5px 5px 12px 5px;
         span.before{content: ''; position: absolute; width: 26px; height: 26px; transform: rotate(45deg); background-color: white; right: 87px; bottom: 6px;     box-shadow: 6px 6px 10px -7px rgba(0, 0, 0, 0.2); z-index: 2; }
     }
     .active-form-header{top: 50px; left: -40px;height: 278px; backface-visibility: hidden; padding: 24px 5px 5px 5px;
@@ -69,7 +71,7 @@
                 }
              }
              .bot-i{font-size: 16px; font-family: "Roboto", sans-serif; color: rgb(0, 0, 0);  line-height: 1.5; padding-top: 25px; font-weight: 300; position: relative; padding-bottom: 20px; transition: all 0.3s;
-                &:before{content: ''; position: absolute; bottom: 0; left: calc(50% - 40px); right: calc(50% - 40px); height: 1px; background-color: black; opacity: 0; transition: all 0.3s; }
+                .before{content: ''; position: absolute; bottom: 0; left: calc(50% - 40px); right: calc(50% - 40px); height: 1px; background-color: black; opacity: 0; transition: all 0.3s; }
 
              }
              .hover-i{font-size: 16px; font-family: "Roboto", sans-serif; color: rgb(0, 0, 0); font-weight: 300; padding-top: 20px; opacity: 0;transition: all 0.3s;
@@ -81,11 +83,11 @@
         }
 
         .item:hover{ cursor: pointer;
-            .top-i .convert{border-width: 1px;}
-            .bot-i{font-weight: 700;
-                &:before{opacity: 1;}
+            .top-i .convert{border-width: 1px !important  ;}
+            .bot-i{font-weight: 700 !important;
+                .before{opacity: 1 !important;}
             }
-            .hover-i{opacity: 1;}
+            .hover-i{opacity: 1 !important;}
         }
     }
 }
@@ -97,7 +99,7 @@
     .top-form{padding: 75px 0;}
     .conteiner{ padding-top: 50px;
         .form-part{float: left; width: 60%;
-            .conteiner{padding: 10px 0;}
+            .conteiner{padding: 20px 0;}
             .contact-form-title{font-size: 30px; font-family: "Roboto", sans-serif; color: rgb(36, 36, 36);   line-height: 1.5; text-align: left;}
             .contact-form-item{display: inline-block; width: 45%;
                 &:first-child{margin-right: 5%; margin-left: 0;}
@@ -108,8 +110,10 @@
                 input{width: 100%; padding-left: 10px; height: 50px; border: 1px solid #a2a2a2; border-radius: 3px;font-size: 16px; font-family: "Roboto", sans-serif;  color: rgb(84, 84, 84); }
                 textarea{ padding: 16px 10px; width: 100%; height: 80px;  border: 1px solid #a2a2a2; border-radius: 3px; resize: none; font-size: 16px; font-family: "Roboto",sans-serif; color: rgb(84, 84, 84); }
                 label{position: absolute; top: 16px; left: 10px; font-size: 16px; font-family: "Roboto";  color: rgb(84, 84, 84); transition: all 0.3s;}
-                .translator{top: -10px; left: 0; font-size: 10px; opacity: 0;}
+                .translator{top: -16px; left: 5px; font-size: 14px; opacity: 1;}
+                
                 .errorText{display: none !important;}
+                input[type='email'].error{border: 1px solid red; box-shadow: inset 0px 0px 2px 2px red; }
             }
             .contact-form-row-sub{  width: 100%; padding: 10px 0;
                 .contact-form-item{margin: 0; width: 100%;}
