@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b61870fb-7d8b-43d4-b044-7ce566ef727e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/basic_scripts.js" afterPath="$PROJECT_DIR$/src/js/basic_scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/develop_5.js" afterPath="$PROJECT_DIR$/src/js/develop_5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/eight-block.html" afterPath="$PROJECT_DIR$/src/partials/eight-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/eleven-block.html" afterPath="$PROJECT_DIR$/src/partials/eleven-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/five-block.html" afterPath="$PROJECT_DIR$/src/partials/five-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/four-block.html" afterPath="$PROJECT_DIR$/src/partials/four-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/nine-block.html" afterPath="$PROJECT_DIR$/src/partials/nine-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/second-block.html" afterPath="$PROJECT_DIR$/src/partials/second-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/seven-block.html" afterPath="$PROJECT_DIR$/src/partials/seven-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/six-block.html" afterPath="$PROJECT_DIR$/src/partials/six-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/ten-block.html" afterPath="$PROJECT_DIR$/src/partials/ten-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/third-block.html" afterPath="$PROJECT_DIR$/src/partials/third-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/top-block.html" afterPath="$PROJECT_DIR$/src/partials/top-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/adaptation_develop/dev_1_adaptation.scss" afterPath="$PROJECT_DIR$/src/sass/adaptation_develop/dev_1_adaptation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/adaptation_develop/dev_4_adaptation.scss" afterPath="$PROJECT_DIR$/src/sass/adaptation_develop/dev_4_adaptation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/develop/dev_4.scss" afterPath="$PROJECT_DIR$/src/sass/develop/dev_4.scss" />
-    </list>
+    <list default="true" id="b61870fb-7d8b-43d4-b044-7ce566ef727e" name="Default" comment="" />
     <ignored path="teacher.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -342,12 +324,12 @@
       <workItem from="1461736842386" duration="25261000" />
       <workItem from="1461767510710" duration="194000" />
       <workItem from="1461820676455" duration="1596000" />
-      <workItem from="1461838592151" duration="5403000" />
+      <workItem from="1461838592151" duration="5539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32454000" />
+    <option name="totallyTimeSpent" value="32590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
