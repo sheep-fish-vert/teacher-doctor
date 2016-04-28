@@ -239,12 +239,12 @@ function popNext(popupId, popupWrap){
 /*маска на инпуте*/
 function Maskedinput(){
     if($('.tel-mask')){
-        $('.tel-mask').mask('+9 (999) 999-99-99 ');
+        $('.tel-mask').mask('+9 (999) 999-99-99');
     }
 }
 function Maskedinput2(){
     if($('.tel-mask2')){
-        $('.tel-mask2').mask('+7 (999) -999-99-99 ');
+        $('.tel-mask2').mask('+7 (999) -999-99-99');
     }
 }
 

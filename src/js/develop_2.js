@@ -83,10 +83,12 @@ $(document).ready(function () {
             $(this).closest('.form_input').find('.super-label').removeClass('translator');
         }
     });
-
+/*
     $('.header-telefone').click(function () {
         $(this).find('.after-frorm').addClass('active-form-header');
+        $('.main').addClass('hide-hipe');
     });
+    */
 
     $(document).on('click touchstart', function (event) {
         if ($('.after-frorm').hasClass('active-form') && !$('.after-frorm ').is(event.target) && $('.after-frorm ').has(event.target).length === 0 && !$('.call-phone').is(event.target) && $('.call-phone').has(event.target).length === 0) {
@@ -97,6 +99,8 @@ $(document).ready(function () {
 
         if ($('.after-frorm').hasClass('active-form-header') && !$('.after-frorm ').is(event.target) && $('.after-frorm ').has(event.target).length === 0 && !$('.header-telefone').is(event.target) && $('.header-telefone').has(event.target).length === 0) {
             $('.after-frorm').removeClass('active-form-header');
+            //$('.header').removeClass('hide-hipe');
+            $('.main').removeClass('hide-hipe');
         }
 
     });
@@ -113,20 +117,47 @@ $(document).ready(function () {
 
             } else {
                 $(this).closest('.super-button').find('.after-frorm').addClass('active-form');
+                
+                $(this).closest('.super-button').find('.after-frorm').find('input').focus();
+                
                 $('.header').addClass('hide-hipe');
+                $('.main').addClass('hide-hipe');
+            };
+            setTimeout(function () { flagShtock = true; }, 1000);
+        }
+    });
+    
+    $('.header-telefone').click(function () {
+        if (flagShtock) {
+            flagShtock = false;
+            
+            if ($('.after-frorm').hasClass('active-form-header')) {
+
+                $('.header').removeClass('hide-hipe');
+                $('.main').removeClass('hide-hipe');
+                $('.after-frorm').removeClass('active-form');
+
+            } else {
+                $(this).find('.after-frorm').addClass('active-form-header');
+                //$('.header').addClass('hide-hipe');
+                
+                $(this).find('input').focus();
+                
                 $('.main').addClass('hide-hipe');
             }
             setTimeout(function () { flagShtock = true; }, 1000);
         }
     });
+    
 
     $('form').find('button').prop("disabled", true);
     $('form').find('button').addClass('doesnotuse');
 
 
-    $('input, textarea').on('change', function () {
+    $('input, textarea').on('keyup', function () {
         if (!$(this).closest('form').hasClass('form-twelwe')) {
-            if ($(this).val() != '' || $(this).val().indexOf("_") != -1) {
+
+            if ($(this).val().indexOf("_") == -1) {
                 $(this).closest('form').find('button').prop("disabled", false);
                 $(this).closest('form').find('button').removeClass('doesnotuse');
             } else { 
@@ -134,9 +165,11 @@ $(document).ready(function () {
                 $('form').find('button').addClass('doesnotuse');
             }
         } else { 
-            if (($('#name-tw').val() != '') && ($('#email-tw').val() != '') && ($('#area-tw').val() != '')) {
-                $(this).closest('form').find('button').prop("disabled", false);
-                $(this).closest('form').find('button').removeClass('doesnotuse');
+            if (($('#name-tw').val() != '') && (!$('#email-tw').hasClass('error')) && ($('#email-tw').val() != '') && ($('#area-tw').val() != '')) {
+                
+                    $(this).closest('form').find('button').prop("disabled", false);
+                    $(this).closest('form').find('button').removeClass('doesnotuse');
+                  
             } else { 
                 $('form').find('button').prop("disabled", true);
                 $('form').find('button').addClass('doesnotuse');
@@ -158,6 +191,12 @@ $(document).ready(function () {
         if ($(this).index() == 1) {
             $(this).find('.convert').css('border-color', specColor);
             $(this).closest('.row-conteiner').find('.item').eq(0).find('.convert').css('border-color', specColor);
+            
+            $(this).closest('.row-conteiner').find('.item').eq(0).find('.hover-i').css('opacity', 1);
+            
+            $(this).closest('.row-conteiner').find('.item').eq(0).find('.bot-i').css('font-weight', '700');
+            $(this).closest('.row-conteiner').find('.item').eq(0).find('.bot-i>span').css('opacity', 1);
+            
             $(this).find('.sup').css('background-color', specColor);
             $(this).closest('.row-conteiner').find('.item').eq(0).find('.sup').css('background-color', specColor);
 
@@ -172,6 +211,17 @@ $(document).ready(function () {
             $(this).find('.sup').css('background-color', specColor);
             $(this).closest('.row-conteiner').find('.item').eq(0).find('.sup').css('background-color', specColor);
             $(this).closest('.row-conteiner').find('.item').eq(1).find('.sup').css('background-color', specColor);
+            
+            $(this).closest('.row-conteiner').find('.item').eq(0).find('.hover-i').css('opacity', 1);
+            
+            $(this).closest('.row-conteiner').find('.item').eq(0).find('.bot-i').css('font-weight', '700');
+            $(this).closest('.row-conteiner').find('.item').eq(0).find('.bot-i>span').css('opacity', 1);
+            
+            $(this).closest('.row-conteiner').find('.item').eq(1).find('.hover-i').css('opacity', 1);
+            
+            $(this).closest('.row-conteiner').find('.item').eq(1).find('.bot-i').css('font-weight', '700');
+            $(this).closest('.row-conteiner').find('.item').eq(1).find('.bot-i>span').css('opacity', 1);
+            
             $(this).find('.sup').find('i').css('color', 'white');
             $(this).closest('.row-conteiner').find('.item').eq(0).find('.sup').find('i').css('color', 'white');
             $(this).closest('.row-conteiner').find('.item').eq(1).find('.sup').find('i').css('color', 'white');
@@ -185,6 +235,9 @@ $(document).ready(function () {
             $('.item').find('.sup').css('background-color', 'white');
             $('.item').find('.plank').css('background-color', '#afafaf');
             $('.item').find('.sup').find('i').css('color', '#afafaf');
+            $('.item').find('.hover-i').css('opacity', 0);            
+            $('.item').find('.bot-i').css('font-weight', '400');
+            $('.item').find('.bot-i>span').css('opacity', 0);
         });
 
 
