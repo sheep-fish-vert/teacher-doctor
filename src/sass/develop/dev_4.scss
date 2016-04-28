@@ -1,11 +1,11 @@
 /*top block*/
 .top-block{position: relative;z-index: 1;overflow: hidden;
     .top-block-slider{margin-bottom: 0;
-        .item{min-height: 1080px;position: relative;overflow: hidden;
+        .item{min-height: 100vh;position: relative;overflow: hidden;
             img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);min-width: 100%;    max-width: none;}
         }
     }
-    .top-block-inform{position: absolute;top: 0;left: 0;width: 100%;text-align: center;padding-top: 158px;height: 100%;
+    .top-block-inform{position: absolute;top: 0;left: 0;width: 100%;text-align: center;padding-top: 80px;height: 100%;
         .top-block-title{font-size: 60px;line-height: 1.3;font-weight: 300;font-family:'Roboto',sans-serif;position: relative;
             b{font-weight: bold;text-transform: uppercase;}
             span{position: absolute;bottom:-26px;width: 75px;left: 50%;transform: translateX(-50%);height: 3px;}
