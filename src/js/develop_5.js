@@ -156,6 +156,26 @@ function trollSliderSlickInit(){
         });
     }
 }
+function scrollForActive(){
+    $(window).scroll(function(event) {
+
+        var scrolltop = $(window).scrollTop()+$('header').outerHeight()+140;
+
+        $('.main section').each(function(index, el) {
+            if($(this).offset().top <= scrolltop && $(this).offset().top+$(this).outerHeight()>scrolltop){
+                var sectID = '#'+$(this).attr('id');
+                console.log(sectID);
+                var notAct = true;
+                $('header li a').each(function(){
+                    var ahid = $(this).attr('href');
+                    if(ahid == sectID){$('header li a').removeClass('active'); notAct = false; $(this).addClass('active');console.log('%c!!!match','background-color:green');}else{console.log('%c not-match','background-color:red');}
+                });
+                if(notAct == true){$('header li a').removeClass('active');}
+
+            }
+        });
+    });
+}
 $(document).ready(function(){
     hoverElem();
     sliderInit();
@@ -165,6 +185,11 @@ $(document).ready(function(){
         trollSlider();
     }
     trollSliderSlickInit();
+    $('.third-wrap .item.active .button').click(function (event) {
+        $('.call-phone').click();
+        return false;
+    });
+    scrollForActive();
 });
 
 $(window).load(function(){
