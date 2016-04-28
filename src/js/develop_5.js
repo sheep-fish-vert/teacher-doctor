@@ -173,8 +173,5 @@ $(window).load(function(){
 
 $(window).resize(function(){
     hoverElem();
-    if($(window).width()>1280 - $.scrollbarWidth()){
-        $('.five-block .conent').slick('unslick');
-        $('.trollslider').slick('unslick');
-    }
+    
 });

@@ -114,7 +114,7 @@ function validationCall(form) {
         success : function(data){
             if ( data.trim() == 'true') {
                // thisForm.trigger("reset");
-                popNext("#call_success", "call-popup");
+                // popNext("#call_success", "call-popup");
             }
             else {
                //thisForm.trigger('reset');
@@ -175,6 +175,7 @@ function validationCallDocument(form){
     });
 
 }
+
 
 /* Отправка формы с файлaми */
 /* не использовать input[type="file"] в форме и не забыть дописать форме enctype="multipart/form-data" */
