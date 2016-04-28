@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b61870fb-7d8b-43d4-b044-7ce566ef727e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/develop_5.js" afterPath="$PROJECT_DIR$/src/js/develop_5.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/validate_script.js" afterPath="$PROJECT_DIR$/src/js/validate_script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/develop/dev_2.scss" afterPath="$PROJECT_DIR$/src/sass/develop/dev_2.scss" />
     </list>
     <ignored path="teacher.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +58,8 @@
       <file leaf-file-name="validate_script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/validate_script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10">
-              <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+            <state relative-caret-position="-926">
+              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -106,8 +105,8 @@
         <option value="$PROJECT_DIR$/src/partials/nine-block.html" />
         <option value="$PROJECT_DIR$/src/partials/header.html" />
         <option value="$PROJECT_DIR$/src/sass/develop/dev_5.scss" />
-        <option value="$PROJECT_DIR$/src/js/validate_script.js" />
         <option value="$PROJECT_DIR$/src/js/develop_5.js" />
+        <option value="$PROJECT_DIR$/src/js/validate_script.js" />
       </list>
     </option>
   </component>
@@ -357,12 +356,12 @@
       <updated>1461736840211</updated>
       <workItem from="1461736842386" duration="25261000" />
       <workItem from="1461767510710" duration="194000" />
-      <workItem from="1461820676455" duration="698000" />
+      <workItem from="1461820676455" duration="736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26153000" />
+    <option name="totallyTimeSpent" value="26191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="1194" width="1440" height="1286" extended-state="0" />
@@ -523,8 +522,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/validate_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+        <state relative-caret-position="-926">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

@@ -103,6 +103,9 @@ function validationCall(form) {
     $('.header').removeClass('hide-hipe');
     $('.main').removeClass('hide-hipe');
     $('.after-frorm').removeClass('active-form');
+    $('.after-frorm').removeClass('active-form-header');
+    $(form).find('input').addClass('virubiss');
+    
     
   var thisForm = $(form);
   var formSur = thisForm.serialize();
@@ -114,7 +117,9 @@ function validationCall(form) {
         success : function(data){
             if ( data.trim() == 'true') {
                // thisForm.trigger("reset");
+
                 // popNext("#call_success", "call-popup");
+
             }
             else {
                //thisForm.trigger('reset');
@@ -128,7 +133,12 @@ function validationCall2(form) {
     
     $(form).find('button').prop("disabled", true);
     $(form).find('button').addClass('doesnotuse');
+    
     $(form).find('input').prop("disabled", true);
+    $(form).find('textarea').prop("disabled", true);
+    
+    $(form).find('input').addClass('virubiss');
+    $(form).find('textarea').addClass('virubiss');
     
   var thisForm = $(form);
   var formSur = thisForm.serialize();
