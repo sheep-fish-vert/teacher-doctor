@@ -1,18 +1,19 @@
-var imgs = $('.img-box .image');
+var imgsDesc = $('.img-box.desctop .image');
+var imgsMob = $('.img-box.mobile .image');
 function hoverElem(){
     if($(window).width()>1280 - $.scrollbarWidth()){
-        var container = $('.five-block .conent');
+        var container = $('.five-block .conent.desctop');
         var windW = $(window).width();
         var contW = container.width();
         var slide = ((contW - windW)/2)*-1;
-        var itemsCount = $('.five-block .item').length;
+        var itemsCount = $('.five-block .desctop .item').length;
         var coefSlide = 100 / itemsCount;
         if(windW<contW){animateContainer(slide);}
 
-        $(document).on('mouseover', '.five-block .item', function(e) {
-            imgs.removeClass('default');
+        $(document).on('mouseover', '.five-block .desctop .item', function(e) {
+            imgsDesc.removeClass('default');
             var ind = $(this).index();
-            imgs.eq((ind+1)).addClass('default');
+            imgsDesc.eq((ind+1)).addClass('default');
             if (ind>(itemsCount/2)){ind = ind+1;}
             slide = (((contW - windW)/100)*(ind * coefSlide))*-1;
             animateContainer(slide);
@@ -23,9 +24,9 @@ function hoverElem(){
     }
 }
 function sliderInit(){
-    if($(window).width()<=1280 - $.scrollbarWidth()){
+    if($(window).width()<=1280 - $.scrollbarWidth() && !$('.five-block .conent.mobile').hasClass('slick-initialized')){
 
-        $('.five-block .conent').slick({
+        $('.five-block .conent.mobile').slick({
           infinite: true,
            centerMode: false,
           slidesToShow: 3,
@@ -59,8 +60,8 @@ function changeBg(){
         for (var i = 0; i < elements.length; i++) {
             if($(elements[i]).hasClass('slick-current')){
                 ind = $(elements[i]).attr('data-slick-index');
-                imgs.removeClass('default');
-                imgs.eq(ind).addClass('default');
+                imgsMob.removeClass('default');
+                imgsMob.eq(ind).addClass('default');
             }
         }
 
@@ -89,7 +90,7 @@ function tabs(){   //табчики закажите сайт
 }
 
 function trollSlider() {
-    var slider = $('.trollslider');
+    var slider = $('.trollslider.desctop');
     var itemsCount = initSlider(slider);
     buildSlider(slider);
     $(document).on('click', '.trollslider .next', function(){
@@ -141,8 +142,8 @@ function trollSlider() {
     }
 }
 function trollSliderSlickInit(){
-    if($(window).width()<=1280 - $.scrollbarWidth()){
-        $('.trollslider').slick({
+    if($(window).width()<=1280 - $.scrollbarWidth()&& !$('.trollslider.mobile').hasClass('slick-initialized')){
+        $('.trollslider.mobile').slick({
 
             centerMode: false,
             slidesToShow: 1,
@@ -198,5 +199,7 @@ $(window).load(function(){
 
 $(window).resize(function(){
     hoverElem();
+    sliderInit();
+    trollSliderSlickInit();
 
 });
