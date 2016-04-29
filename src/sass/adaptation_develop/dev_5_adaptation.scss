@@ -46,6 +46,8 @@
     @media screen and (max-width: 1280px){
         .five-block{
             .wrap-five{
+                .desctop{ display: none;}
+                .mobile{ display: block;}
                 .title{font-size: 32px;line-height: 42px;}
                 .conent{width:100%;margin-bottom: 0;}
                 .item{float:none; display: inline-block;vertical-align: top; width: auto;padding-left: 10px; padding-right: 10px;}
@@ -53,11 +55,20 @@
             }
         }
     }
+@media screen and (max-width: 600px){
+    .five-block{
+        .wrap-five{
+            .mobile .image img { width:auto;}
+        }
+    }
+}
 /*END five*/
 /*eight*/
     @media screen and (max-width: 1280px) {
         .eight-block {
             .wrap-eight {
+                .desctop{ display: none;}
+                .mobile{ display: block;}
                 .title{font-size: 32px;line-height: 42px;}
                 .tabs {
                     .list { width: 100%; }
