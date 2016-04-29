@@ -183,10 +183,12 @@ $(document).ready(function(){
         trollSlider();
     }
     trollSliderSlickInit();
+    /*
     $('.third-wrap .item.active .button').click(function (event) {
         $('.call-phone').click();
         return false;
     });
+    */
     scrollForActive();
 });
 

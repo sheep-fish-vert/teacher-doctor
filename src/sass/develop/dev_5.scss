@@ -22,7 +22,7 @@
                 span{position: absolute;  bottom: -42px; width: 75px; left: 50%;  transform: translateX(-50%); height: 3px;}
             }
             .content-wrap{position: relative;     padding-top: 93px;    display: flex;  flex-wrap:wrap;  justify-content: space-around;
-                .item{color: #fff; font:300 16px/24px 'Roboto';position: relative; border:1px solid #9e9a98; min-height: 315px; width: 370px; display: inline-block; vertical-align: top; padding: 20px 20px 10px 90px;  margin-bottom: 40px;
+                .item{color: #fff; font:300 16px/24px 'Roboto';position: relative; border:1px solid #9e9a98; min-height: 315px; width: 370px; display: inline-block; vertical-align: top; padding: 20px 20px 10px 90px;  margin-bottom: 40px; position: relative;
                     p:first-child{font-weight: 500; font-size: 22px;line-height: 26px;padding-bottom: 10px;}
                     b{font-weight: 700;}
                     &:before{content:'';display: block; background-image: url(/images/ic-stop.png);width: 27px;height: 27px; bottom:-13px; left:calc(50% - 13px);position: absolute;}

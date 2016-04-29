@@ -96,7 +96,7 @@ function validate(form, options){
 
 /*Отправка формы с вызовом попапа*/
 function validationCall(form) {
-    
+    console.log('valid');
     $(form).find('button').prop("disabled", true);
     $(form).find('button').addClass('doesnotuse');
     $(form).find('input').prop("disabled", true);
@@ -130,7 +130,7 @@ function validationCall(form) {
 }
 
 function validationCall2(form) {
-    
+  /*  
     $(form).find('button').prop("disabled", true);
     $(form).find('button').addClass('doesnotuse');
     
@@ -139,7 +139,7 @@ function validationCall2(form) {
     
     $(form).find('input').addClass('virubiss');
     $(form).find('textarea').addClass('virubiss');
-    
+   */
   var thisForm = $(form);
   var formSur = thisForm.serialize();
     
@@ -151,9 +151,12 @@ function validationCall2(form) {
             if ( data.trim() == 'true') {
                thisForm.trigger("reset");
                //popNext("#call_success", "call-popup");
-               $(form).find('button').prop("disabled", false);
-                $(form).find('button').removeClass('doesnotuse');
+               $(form).find('button').prop("disabled", true).addClass('doesnotuse');
+                $(form).find('label.super-label').removeClass('translator');
                 $(form).find('input').prop("disabled", false);
+                 $(form).find('input').val('');
+                 $(form).find('textarea').val('');
+                $(form).find('textarea').prop("disabled", false);
             }
             else {
                thisForm.trigger('reset');
@@ -319,6 +322,9 @@ $(document).ready(function(){
     validate(' .send-right-phone ', { submitFunction: validationCall });
     validate(' .send-header ', { submitFunction: validationCall });
     validate(' .fort-minor ', { submitFunction: validationCall });
+    
+    validate(' .button-third ', { submitFunction: validationCall });
+    
     
     validate(' .form-twelwe ', { submitFunction: validationCall2 });
     
