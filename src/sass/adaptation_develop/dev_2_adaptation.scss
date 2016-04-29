@@ -76,17 +76,26 @@
 }
 
 @media screen and (max-width: 666px){
-
+    .eleven-block .item-wrap .item-text { width: 100%;}
+    .top-block .top-block-inform .top-block-form input {font-size: 16px; padding: 0;
+        &::-webkit-input-placeholder {color:#545454;font-size: 16px;font-weight: 300;}
+        &:-moz-placeholder {color:#545454;font-size: 16px;font-weight: 300; text-align: center;}
+        &::-moz-placeholder {color:#545454;font-size: 16px;font-weight: 300; text-align: center;}
+        &:-ms-input-placeholder {color:#545454;font-size: 16px;font-weight: 300; text-align: center;}
+    }
 }
 @media screen and (max-width: 479px){
-
+    .top-block-form input{letter-spacing: 3px;}
+    .six-block .top-block-form button[type=submit]  { height: 70px; 
+        span{padding: 0 10px;}
+    }
 }
 @media screen and (max-width: 320px){
 
 }
 
 
-@media screen and (max-height: 980px) and (min-height: 650px) {
+@media screen and (max-height: 980px) and (min-height: 650px) and (min-width: 1024px) {
     .top-block .top-block-slider .item { min-height: 100vh;}
     .top-block-inform .mbox{display: flex; flex-wrap: wrap; align-content: space-around; height: calc(100vh - 100px); }
     .top-block .top-block-inform .top-block-title { font-size: 36px;     min-width: 100%;}
@@ -96,7 +105,7 @@
     .top-block-inform .top-block-button {position: absolute; bottom: 0; left: calc(50% - 10px);}
 }
 
-@media screen and (max-height: 768px) and (min-height: 650px) {
+@media screen and (max-height: 768px) and (min-height: 650px) and (min-width: 1024px) {
     .top-block .top-block-slider .item { min-height: 100vh;}
     .top-block-inform .mbox{display: flex; flex-wrap: wrap; align-content: space-around; height: calc(100vh - 120px); }
     .top-block .top-block-inform .top-block-title { font-size: 36px;     min-width: 100%;}
