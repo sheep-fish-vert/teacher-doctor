@@ -24,18 +24,18 @@
     .twelve-block .conteiner {
         .form-part { float: none;  width: 100%;  padding: 0 20px;
             .contact-form-title { text-align: center;}
-            .contact-form-row-sub .contact-form-item { display: flex; align-items: center; justify-content: center; padding-bottom: 20px;} 
+            .contact-form-row-sub .contact-form-item { display: flex; align-items: center; justify-content: center; padding-bottom: 20px;}
         }
         .content-send { float: none; width: 100%; padding: 0 20px;
             ul{padding: 0; display: flex; align-items: center; flex-wrap: wrap; justify-content: space-around;
-                li{min-width: 300px;}                
+                li{min-width: 300px;}
             }
-        }      
+        }
     }
 }
 @media screen and (max-width: 767px){
     /* forms */
-    .super-button{width: 50px; height: 50px; right: 20px; bottom: 20px;   
+    .super-button{width: 50px; height: 50px; right: 20px; bottom: 20px;
         .call-phone { width: 50px;  height: 50px;
             i {font-size: 35px;}
         }
@@ -58,7 +58,7 @@
         }
     }
     /* forms */
-    
+
     .after-frorm.fixer-jump-2 {left: calc(50% - 290px/2);}
 
 /* ten block and twelve block */
@@ -66,7 +66,7 @@
     .twelve-block{padding: 20px 0;
         .conteiner .form-part .contact-form-row-sub button {max-width: 100%;}
         .conteiner .form-part .contact-form-item { display:block; width: 100%; margin: 0 !important; padding-bottom: 20px;
-            &:last-child{padding-bottom: 0;}        
+            &:last-child{padding-bottom: 0;}
         }
         .top-form {
             padding: 20px 0;
@@ -86,7 +86,7 @@
 }
 @media screen and (max-width: 479px){
     .top-block-form input{letter-spacing: 3px;}
-    .six-block .top-block-form button[type=submit]  { height: 70px; 
+    .six-block .top-block-form button[type=submit]  { height: 70px;
         span{padding: 0 10px;}
     }
 }
@@ -95,21 +95,23 @@
 }
 
 
-@media screen and (max-height: 980px) and (min-height: 650px) and (min-width: 1024px) {
+@media screen and (max-height: 960px) and (min-height: 650px) and (min-width: 1024px) {
     .top-block .top-block-slider .item { min-height: 100vh;}
     .top-block-inform .mbox{display: flex; flex-wrap: wrap; align-content: space-around; height: calc(100vh - 100px); }
     .top-block .top-block-inform .top-block-title { font-size: 36px;     min-width: 100%;}
-    .top-block .top-block-inform .top-block-subtitle {font-size: 22px; min-width: 100%; padding-bottom: 15px; padding-top: 35px;} 
+    .top-block .top-block-inform .top-block-subtitle {font-size: 22px; min-width: 100%; padding-bottom: 15px; padding-top: 35px;}
     .top-block-form .top-block-form-title { font-size: 36px;}
     .top-block-form input { height: 50px;}
-    .top-block-inform .top-block-button {position: absolute; bottom: 0; left: calc(50% - 10px);}
+    .top-block-button {position: absolute; left: calc(50% - 1200px/2 - 15px) !important;
+    z-index: 8; bottom: 0;}
+    .top-block-form {margin-bottom: 0;}
 }
 
 @media screen and (max-height: 768px) and (min-height: 650px) and (min-width: 1024px) {
     .top-block .top-block-slider .item { min-height: 100vh;}
-    .top-block-inform .mbox{display: flex; flex-wrap: wrap; align-content: space-around; height: calc(100vh - 120px); }
+    .top-block-inform .mbox{display: flex; flex-wrap: wrap; align-content: space-around; height: calc(100vh - 80px); }
     .top-block .top-block-inform .top-block-title { font-size: 36px;     min-width: 100%;}
-    .top-block .top-block-inform .top-block-subtitle {font-size: 22px; min-width: 100%; padding-bottom: 15px; padding-top: 35px;} 
+    .top-block .top-block-inform .top-block-subtitle {font-size: 22px; min-width: 100%; padding-bottom: 15px; padding-top: 35px;}
     .top-block-form .top-block-form-title { font-size: 36px;}
     .top-block-form input { height: 50px;}
     .top-block-inform .top-block-button {position: absolute; bottom: 0; left: calc(50% - 10px);}
@@ -118,8 +120,11 @@
     .top-block-form p {margin-bottom: 10px;}
     .top-block-form button[type=submit] {height: 50px;}
     .top-block-form .top-block-form-title { padding-bottom: 10px;}
+    .top-block-inform .top-block-button {position: absolute; left: calc(50% - 1200px/2 - 15px);
+    z-index: 8; bottom: 0;}
+    .top-block-form {margin-bottom: 0;}
 }
 
 @media screen and (max-height: 649px){
-    .top-block .top-block-slider .item { min-height: 1000px;}
+    .top-block .top-block-slider .item { min-height: 760px;}
 }
