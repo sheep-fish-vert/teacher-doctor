@@ -77,7 +77,12 @@
 
 @media screen and (max-width: 666px){
     .eleven-block .item-wrap .item-text { width: 100%;}
-
+    .top-block .top-block-inform .top-block-form input {font-size: 16px; padding: 0;
+        &::-webkit-input-placeholder {color:#545454;font-size: 16px;font-weight: 300;}
+        &:-moz-placeholder {color:#545454;font-size: 16px;font-weight: 300; text-align: center;}
+        &::-moz-placeholder {color:#545454;font-size: 16px;font-weight: 300; text-align: center;}
+        &:-ms-input-placeholder {color:#545454;font-size: 16px;font-weight: 300; text-align: center;}
+    }
 }
 @media screen and (max-width: 479px){
     .top-block-form input{letter-spacing: 3px;}
