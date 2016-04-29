@@ -109,7 +109,7 @@
 
 @media screen and (max-height: 768px) and (min-height: 650px) and (min-width: 1200px) {
     .top-block .top-block-slider .item { min-height: 100vh;}
-    .top-block-inform .mbox{display: flex; flex-wrap: wrap; align-content: space-around; height: calc(100vh - 80px); }
+    .top-block-inform .mbox{display: flex; flex-wrap: wrap; align-content: space-around; height: calc(100vh - 80px); flex-direction:column;}
     .top-block .top-block-inform .top-block-title { font-size: 36px;     min-width: 100%;}
     .top-block .top-block-inform .top-block-subtitle {font-size: 22px; min-width: 100%; padding-bottom: 15px; padding-top: 35px;}
     .top-block-form .top-block-form-title { font-size: 36px;}
