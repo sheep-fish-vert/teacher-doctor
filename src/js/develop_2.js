@@ -84,12 +84,11 @@ $(document).ready(function () {
             $(this).closest('.form_input').find('.super-label').removeClass('translator');
         }
     });
-/*
+
     $('.header-telefone').click(function () {
         $(this).find('.after-frorm').addClass('active-form-header');
         $('.main').addClass('hide-hipe');
     });
-    */
 
     $(document).on('click touchstart', function (event) {
         if ($('.after-frorm').hasClass('active-form') && !$('.after-frorm ').is(event.target) && $('.after-frorm ').has(event.target).length === 0 && !$('.call-phone').is(event.target) && $('.call-phone').has(event.target).length === 0) {
@@ -171,15 +170,18 @@ $(document).ready(function () {
         }
     });
 
-    $('.telefone-number').click(function () {
+    $('.telefone-number-wrap').click(function () {
         if (flagShtock) {
             flagShtock = false;
 
             if ($('.after-frorm').hasClass('active-form-header')) {
+                setTimeout(function(){
+                    $('.after-frorm').removeClass('active-form-header');
+                    $('.header').removeClass('hide-hipe');
+                    $('.main').removeClass('hide-hipe');
+                    $('.after-frorm').removeClass('active-form');
+                }, 300);
 
-                $('.header').removeClass('hide-hipe');
-                $('.main').removeClass('hide-hipe');
-                $('.after-frorm').removeClass('active-form');
 
             } else {
                 $(this).closest('.header-telefone').find('.after-frorm').addClass('active-form-header');
@@ -291,14 +293,12 @@ $(document).ready(function () {
     googleMap('map');
     map.set('draggable', false);
 
-/*
     if ($(window).width() < 768) {
         map.set('draggable', false);
     }
     else {
         map.set('draggable', true);
     };
-    */
     /* map */
 
 
@@ -312,12 +312,12 @@ $(window).load(function () {
 });
 
 $(window).resize(function () {
-    /*
+
     if ($(window).width() < 768) {
         map.set('draggable', false);
     }
     else {
         map.set('draggable', true);
     };
-*/
+
 });
