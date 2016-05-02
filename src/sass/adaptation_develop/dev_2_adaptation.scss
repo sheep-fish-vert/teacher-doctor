@@ -93,8 +93,10 @@
 @media screen and (max-width: 320px){
 
 }
-
-
+@media screen and (max-height: 1080px)  {
+    .top-block .top-block-slider .item { min-height: 1000px;}
+}
+/*
 @media screen and (max-height: 960px) and (min-height: 650px) and (min-width: 1200px) {
     .top-block .top-block-slider .item { min-height: 100vh;}
     .top-block-inform .mbox{display: flex; flex-wrap: wrap; align-content: space-around; height: calc(100vh - 100px); }
@@ -128,3 +130,4 @@
 @media screen and (max-height: 649px){
     .top-block .top-block-slider .item { min-height: 1000px; height: auto;}
 }
+*/
