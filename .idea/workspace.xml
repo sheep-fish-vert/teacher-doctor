@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b61870fb-7d8b-43d4-b044-7ce566ef727e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/develop_5.js" afterPath="$PROJECT_DIR$/src/js/develop_5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/eight-block.html" afterPath="$PROJECT_DIR$/src/partials/eight-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/five-block.html" afterPath="$PROJECT_DIR$/src/partials/five-block.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/adaptation_develop/dev_5_adaptation.scss" afterPath="$PROJECT_DIR$/src/sass/adaptation_develop/dev_5_adaptation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/develop/dev_5.scss" afterPath="$PROJECT_DIR$/src/sass/develop/dev_5.scss" />
-    </list>
+    <list default="true" id="b61870fb-7d8b-43d4-b044-7ce566ef727e" name="Default" comment="" />
     <ignored path="teacher.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -341,12 +334,12 @@
       <workItem from="1461820676455" duration="1596000" />
       <workItem from="1461838592151" duration="5539000" />
       <workItem from="1461916996004" duration="1269000" />
-      <workItem from="1461919436544" duration="1777000" />
+      <workItem from="1461919436544" duration="1938000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35636000" />
+    <option name="totallyTimeSpent" value="35797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
