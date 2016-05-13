@@ -78,7 +78,7 @@ function goTo(){
         var header = $('.header').height();
         var href = $(this).attr('href');
         var target = $(href).offset().top-header;
-        $(scroller).animate({scrollTop:target},500);
+        $(scroller).stop().animate({scrollTop:target},500);
     });
 }
 
