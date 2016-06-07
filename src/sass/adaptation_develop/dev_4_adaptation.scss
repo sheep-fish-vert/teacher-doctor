@@ -208,6 +208,21 @@
         .footer-wrap{height: auto;padding-bottom: 20px;flex-direction:column;justify-content: center;    align-items: center;padding-top: 20px;}
     }
     /*/footer*/
+    
+    .global-wrapper .top-block-form .hybrida-form .top-block-form-title { font-size: 24px !important;}
+    
+    .top-block-form form.on_code div.hybrida-form-into>p { font-size: 14px !important; }
+    .top-block-form .os-waitbox-btn { font-size: 20px !important;}
+    
+    
+    .six-block{
+        form.on_code div.hybrida-form-title{ font-size: 24px !important;}    
+        form.on_code div.hybrida-form-into>p { font-size: 14px !important; }
+        .os-waitbox-btn { font-size: 20px !important;}
+    }
+    .six-block .message-btn p {font-size: 20px;}
+    
+    
 }
 @media screen and (max-width: 666px){
 

@@ -18,7 +18,7 @@
         .header-wrap{
             .header-right{
                 .header-telefone{
-                    .telefone-number-wrap{font-size: 22px;line-height: 26px;}
+                    .telefone-number-wrap{font-size: 18px;line-height: 26px;}
                 }
             }
         }
@@ -46,6 +46,16 @@
 
     /* header */
 
+    
+        .header{
+        .header-wrap{
+            .header-right{
+                .header-telefone{
+                    .telefone-number-wrap{font-size: 20px;line-height: 26px;}
+                }
+            }
+        }
+    }
         .header{
             .navigation-main{display: none;}
             .header-wrap{padding-right: 50px;
@@ -220,7 +230,7 @@
                 }
                 .header-right{justify-content: flex-start;
                     .header-telefone{margin-left: 0;
-                        .telefone-number-wrap{font-size: 20px;}
+                        .telefone-number-wrap{font-size: 18px;}
                     }
                 }
             }

@@ -65,6 +65,7 @@
     .top-block-form{border: none; box-shadow: none; text-align: center;
         button[type=submit] {max-width: 100%; transition: all 0.5s;}
         input {padding: 0; text-align: center;}
+        
     }
 }
 
@@ -156,3 +157,76 @@ button{letter-spacing: 2px;}
 @media screen and (max-height: 960px) and (min-height: 650px) and (min-width: 1200px){
     .top-block-button { z-index: 5 !important;}
 }
+
+
+/* pravki */
+    .hybrida-form{
+        .top-block-form-title{ padding-bottom: 29px !important; font-size: 40px !important; text-transform: uppercase;}
+        
+    }
+    .six-block{
+        .os-waitbox{background-color: rgba(255,255,255,0.8); }
+        .message-btn {background-color: rgba(255,255,255,1);}
+        .message-btn p{font-size: 30px;}
+        p.os-waitbox-p{top: 35%;}
+        .os-waitbox-btn {bottom: 67px; height: 60px;  color: #fff; background-color: rgb(244,67,54) !important; max-width: 370px; width: 80%; box-shadow: none; border-radius: 0; margin: 0 auto; font-size: 22px; font-weight: 500; text-transform: uppercase;}
+        
+       form.on_code div.hybrida-form-title { padding-bottom: 29px !important; font-size: 40px !important; text-transform: uppercase;}
+    }
+    
+    
+    .after-frorm{
+        p.os-waitbox-p{top: 35%;}
+        .os-waitbox{background-color: rgba(255,255,255,0.8); top: 15px; }
+        form.on_code div.hybrida-form-title { font-size: 22px !important;  padding: 10px 0 !important;}
+        .hybrida-form-into{text-align: center; padding: 10px 0 0; }
+         .os-waitbox-btn {bottom: 67px; height: 60px;  color: #fff; background-color: rgb(244,67,54) !important; max-width: 370px; width: 80%; box-shadow: none; border-radius: 0; margin: 0 auto; font-size: 22px; font-weight: 500; text-transform: uppercase;}       
+        form.on_code div.hybrida-form-into>p.send_again { padding-top: 10px;}
+    }
+    
+    .super-button{
+        .os-waitbox{background-color: rgba(255,255,255,0.8); top: 0px; bottom: 10px; }
+    }
+    
+    
+    .os-succes-box{background-color: rgba(255, 255, 255, 0.8); padding: 10px; top: 0; bottom: 0; right: 0; left: 0; width: 100% !important; height: auto !important;     } 
+    
+    .top-block-form .os-succes-box{padding-top: 55px;}
+    
+    .os-succes-box-btn{height: 60px;  color: #fff !important; background-color: rgb(244,67,54) !important; max-width: 370px; width: 80%; box-shadow: none; border-radius: 0 !important; margin: 0 auto; font-size: 22px !important; font-weight: 500; text-transform: uppercase; box-shadow: none !important; display: flex !important; align-items: center; justify-content: center; }
+    .os-succes-box-p {color: black !important; }
+    
+    
+    .active-form-header, .fixer-jump{
+         .os-succes-box{background-color: rgba(255, 255, 255, 0.93); padding: 10px; top: 24px !important; bottom: 0; right: 0; left: 0; width: 100% !important; height: auto !important; padding-top: 40px;
+            p{font-size: 18px !important; }
+         }
+         .os-succes-box-count span { color: #f00; font-size: 24px; }
+         .os-succes-box-p2 {margin-top: 10px;}    
+    }
+    
+    
+
+.active-form-header .os-succes-box, .fixer-jump .os-succes-box {font-size: 18px !important;}
+.fixer-jump .os-succes-box { padding-top: 40px !important;  }
+    
+     .fixer-jump{
+          .os-succes-box{background-color: rgba(255, 255, 255, 0.93); padding: 10px; top: 0 !important; bottom: 24px !important ; right: 0; left: 0; width: 100% !important; height: auto !important;}
+     }
+     
+     .formater{max-width: 600px; position: relative; margin: 0 auto;
+        .os-succes-box-btn{padding-bottom: 10px}
+        .os-succes-box{min-height: 250px;}
+     }
+     
+     
+     
+     .form-twelwe{ -webkit-filter: blur(0px) grayscale(0%) !important; filter: none; }
+     .wait{ background-color: rgba(255, 255, 255, 0.93);
+         .os-waitbox-p{font-size: 22px !important;  padding: 10px 0 !important;}
+         .os-waitbox-btn{height: 60px;  color: #fff !important; background-color: rgb(244,67,54) !important;  width: 80%; box-shadow: none; border-radius: 0 !important; margin: 0 auto; font-size: 22px !important; font-weight: 500; text-transform: uppercase; box-shadow: none !important; display: flex !important; align-items: center; justify-content: center; }
+     }
+     
+     .hybrida-form-into br{display: none;}
+     .after-frorm .contact-form-sender .contact-form-row { padding-top: 3px !important;}
+    /* pravki */
